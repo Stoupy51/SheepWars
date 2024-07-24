@@ -10,7 +10,7 @@
 						{
 							"function": "minecraft:set_components",
 							"components": {
-								"minecraft:item_name": "{\"text\":\"Mouton de Soutien\",\"color\":\"#FF69B4\",\"italic\":true}",
+								"minecraft:item_name": "{\"text\":\"Mouton de Soutien\",\"color\":\"#FF69B4\"}",
 								"minecraft:food": {
 									"saturation": 0,
 									"nutrition": 0,

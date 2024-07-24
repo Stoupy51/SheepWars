@@ -10,7 +10,7 @@
 						{
 							"function": "minecraft:set_components",
 							"components": {
-								"minecraft:item_name": "{\"text\":\"Mouton d'Abordage\",\"color\":\"white\",\"italic\":true}",
+								"minecraft:item_name": "{\"text\":\"Mouton d'Abordage\",\"color\":\"white\"}",
 								"minecraft:food": {
 									"saturation": 0,
 									"nutrition": 0,

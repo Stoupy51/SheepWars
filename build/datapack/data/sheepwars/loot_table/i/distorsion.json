@@ -10,7 +10,7 @@
 						{
 							"function": "minecraft:set_components",
 							"components": {
-								"minecraft:item_name": "{\"text\":\"Mouton Distorsion\",\"color\":\"dark_purple\",\"italic\":true}",
+								"minecraft:item_name": "{\"text\":\"Mouton Distorsion\",\"color\":\"dark_purple\"}",
 								"minecraft:food": {
 									"saturation": 0,
 									"nutrition": 0,

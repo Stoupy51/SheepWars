@@ -10,7 +10,7 @@
 						{
 							"function": "minecraft:set_components",
 							"components": {
-								"minecraft:item_name": "{\"text\":\"Mouton Glacé\",\"color\":\"aqua\",\"italic\":true}",
+								"minecraft:item_name": "{\"text\":\"Mouton Glacé\",\"color\":\"aqua\"}",
 								"minecraft:food": {
 									"saturation": 0,
 									"nutrition": 0,

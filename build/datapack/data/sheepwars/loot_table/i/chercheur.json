@@ -10,7 +10,7 @@
 						{
 							"function": "minecraft:set_components",
 							"components": {
-								"minecraft:item_name": "{\"text\":\"Mouton Chercheur\",\"color\":\"green\",\"italic\":true}",
+								"minecraft:item_name": "{\"text\":\"Mouton Chercheur\",\"color\":\"green\"}",
 								"minecraft:food": {
 									"saturation": 0,
 									"nutrition": 0,
