@@ -4,35 +4,52 @@ from python_datapack.utils.database_helper import *
 
 # Main function is run just before making finalyzing the build process (zip, headers, lang, ...)
 def main(config: dict) -> None:
-	database: dict[str, dict] = config["database"]
 	namespace: str = config["namespace"]
+	
+	# Add scoreboard objectives
+	write_to_versioned_file(config, "confirm_load", f"""
+## Scoreboards
+# Delete all scoreboards
+scoreboard objectives remove {namespace}.data
+scoreboard objectives remove {namespace}.right_click
 
-	# Generate ores in the world
-	CustomOreGeneration.all_with_config(config, ore_configs = {
-		"super_iron_ore": [
-			CustomOreGeneration(
-				dimensions = ["minecraft:overworld","stardust:cavern","some_other:dimension"],
-				maximum_height = 50,
-				minimum_height = 0,
-				veins_per_region = 2,
-				vein_size_logic = 0.4,
-			)
-		],
-		"deepslate_super_iron_ore": [
-			CustomOreGeneration(
-				dimensions = ["minecraft:overworld"],
-				maximum_height = 0,
-				veins_per_region = 2,
-				vein_size_logic = 0.4,
-			),
-			CustomOreGeneration(
-				dimensions = ["stardust:cavern"],
-				maximum_height = 0,
-				veins_per_region = 8,
-				vein_size_logic = 0.8,
-			)
-		],
-	})
+# Data scoreboard for math and stuff
+scoreboard objectives add {namespace}.data dummy
+
+# Rightclick detection (You should use an invisible warped_fungus_on_a_stick in offhand)
+scoreboard objectives add {namespace}.right_click minecraft.used:minecraft.warped_fungus_on_a_stick
+
+# Previous color reminder
+scoreboard objectives add {namespace}.previous_color dummy
+
+# Additional
+scoreboard objectives add {namespace}.launched_count dummy
+
+# Team with no collision
+team add sheepwars.sheeps
+team modify sheepwars.sheeps collisionRule never
+""")
+	
+	# Write tick
+	write_to_versioned_file(config, "tick", f"""
+# Make disappear vehicle less "chercheur_rider"
+execute as @e[type=husk,tag=sheepwars.chercheur_rider,predicate=!sheepwars:has_vehicle] run function sheepwars:sheeps/final/disappear
+
+# Right click detection
+execute as @a[scores={{sheepwars.right_click=1..}},sort=random] at @s run function sheepwars:right_click/all
+
+# Remove levitation effect if no sheep is nearby
+execute as @a[gamemode=!spectator,nbt={{active_effects:[{{id:"minecraft:levitation"}}]}}] at @s unless entity @e[tag=sheepwars.sismique,distance=..6] run effect clear @s
+
+# Sheep management
+execute as @e[type=sheep,tag=sheepwars.sheep] at @s run function sheepwars:sheeps/tick_sheep
+
+# Intergalactique markers
+execute as @e[type=marker,tag=sheepwars.intergalactique_marker] at @s run function sheepwars:sheeps/active/intergalactique/marker_tick
+
+# Magic wools
+execute as @e[type=marker,tag=sheepwars.magic_wool] at @s run function sheepwars:magic_wool/tick
+""")
 
 	pass
 

@@ -1,5 +1,5 @@
 
-#> your_namespace:_private/init
+#> sheepwars:_private/init
 #
 # @within	???
 #

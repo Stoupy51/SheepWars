@@ -1,0 +1,34 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:black_wool",
+					"functions": [
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:item_name": "{\"text\":\"Mouton Ténébreux\",\"color\":\"dark_gray\",\"italic\":true}",
+								"minecraft:food": {
+									"saturation": 0,
+									"nutrition": 0,
+									"can_always_eat": true
+								},
+								"minecraft:lore": [
+									"{'text': 'SheepWars', 'italic': true, 'color': 'blue'}"
+								],
+								"minecraft:custom_data": {
+									"sheepwars": {"tenebreux": true},
+									"smithed": {"ignore": {"functionality": true,"crafting": true}}
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+
