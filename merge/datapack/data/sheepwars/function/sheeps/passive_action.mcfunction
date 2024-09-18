@@ -19,7 +19,7 @@ execute if entity @s[tag=sheepwars.glouton,scores={sheepwars.data=40..}] run fil
 execute if entity @s[tag=sheepwars.glouton,scores={sheepwars.data=40..}] run particle block{block_state:"lime_terracotta"} ~ ~1 ~ 1 1 1 0 10
 
 # Sismique
-execute if entity @s[tag=sheepwars.sismique] as @a[gamemode=!spectator,distance=..6] at @s unless block ~ ~-.1 ~ air run effect give @s levitation 1 8 true
+execute if entity @s[tag=sheepwars.sismique] as @a[gamemode=!spectator,distance=..6] at @s unless block ~ ~-.1 ~ air run function sheepwars:sheeps/give_levitation
 execute if entity @s[tag=sheepwars.sismique] run particle block{block_state:"brown_terracotta"} ~ ~ ~ 6 .5 6 0 10
 
 # Foudroyant
