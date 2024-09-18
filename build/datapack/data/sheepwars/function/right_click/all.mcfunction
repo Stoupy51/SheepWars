@@ -2,7 +2,6 @@
 #> sheepwars:right_click/all
 #
 # @within	advancement sheepwars:using_item
-#			sheepwars:v2.0.0/tick
 #
 
 # Revoke advancement

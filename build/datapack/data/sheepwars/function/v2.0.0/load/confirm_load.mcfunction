@@ -24,3 +24,20 @@ data modify storage sheepwars:items all.soutien set value {"id": "minecraft:pink
 data modify storage sheepwars:items all.abordage set value {"id": "minecraft:white_wool","count": 1,"components": {"item_name": "{\"text\":\"Mouton d'Abordage\",\"color\":\"white\"}","food": {"saturation": 0,"nutrition": 0,"can_always_eat": true},"lore": ["{'text': 'SheepWars', 'italic': true, 'color': 'blue'}"],"custom_data": {"sheepwars": {"abordage": true},"smithed": {"ignore": {"functionality": true,"crafting": true}}}}}
 data modify storage sheepwars:items all.intergalactique set value {"id": "minecraft:blue_wool","count": 1,"components": {"item_name": "{\"text\":\"Mouton Intergalactique\",\"color\":\"blue\"}","food": {"saturation": 0,"nutrition": 0,"can_always_eat": true},"lore": ["{'text': 'SheepWars', 'italic': true, 'color': 'blue'}"],"custom_data": {"sheepwars": {"intergalactique": true},"smithed": {"ignore": {"functionality": true,"crafting": true}}}}}
 
+## Scoreboards
+# Delete all scoreboards
+scoreboard objectives remove sheepwars.data
+
+# Data scoreboard for math and stuff
+scoreboard objectives add sheepwars.data dummy
+
+# Previous color reminder
+scoreboard objectives add sheepwars.previous_color dummy
+
+# Additional
+scoreboard objectives add sheepwars.launched_count dummy
+
+# Team with no collision
+team add sheepwars.sheeps
+team modify sheepwars.sheeps collisionRule never
+

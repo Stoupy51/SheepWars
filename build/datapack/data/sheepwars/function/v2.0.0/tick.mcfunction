@@ -7,9 +7,6 @@
 # Make disappear vehicle less "chercheur_rider"
 execute as @e[type=husk,tag=sheepwars.chercheur_rider,predicate=!sheepwars:has_vehicle] run function sheepwars:sheeps/final/disappear
 
-# Right click detection
-execute as @a[scores={sheepwars.right_click=1..},sort=random] at @s run function sheepwars:right_click/all
-
 # Remove levitation effect if no sheep is nearby
 execute as @a[gamemode=!spectator,nbt={active_effects:[{id:"minecraft:levitation"}]}] at @s unless entity @e[tag=sheepwars.sismique,distance=..6] run effect clear @s
 

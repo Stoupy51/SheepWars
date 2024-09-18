@@ -7,17 +7,13 @@ def main(config: dict) -> None:
 	namespace: str = config["namespace"]
 	
 	# Add scoreboard objectives
-	write_to_versioned_file(config, "confirm_load", f"""
+	write_to_load_file(config, f"""
 ## Scoreboards
 # Delete all scoreboards
 scoreboard objectives remove {namespace}.data
-scoreboard objectives remove {namespace}.right_click
 
 # Data scoreboard for math and stuff
 scoreboard objectives add {namespace}.data dummy
-
-# Rightclick detection (You should use an invisible warped_fungus_on_a_stick in offhand)
-scoreboard objectives add {namespace}.right_click minecraft.used:minecraft.warped_fungus_on_a_stick
 
 # Previous color reminder
 scoreboard objectives add {namespace}.previous_color dummy
@@ -34,9 +30,6 @@ team modify sheepwars.sheeps collisionRule never
 	write_to_versioned_file(config, "tick", f"""
 # Make disappear vehicle less "chercheur_rider"
 execute as @e[type=husk,tag=sheepwars.chercheur_rider,predicate=!sheepwars:has_vehicle] run function sheepwars:sheeps/final/disappear
-
-# Right click detection
-execute as @a[scores={{sheepwars.right_click=1..}},sort=random] at @s run function sheepwars:right_click/all
 
 # Remove levitation effect if no sheep is nearby
 execute as @a[gamemode=!spectator,nbt={{active_effects:[{{id:"minecraft:levitation"}}]}}] at @s unless entity @e[tag=sheepwars.sismique,distance=..6] run effect clear @s
