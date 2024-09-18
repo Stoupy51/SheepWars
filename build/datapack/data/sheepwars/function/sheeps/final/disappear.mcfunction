@@ -3,7 +3,7 @@
 #
 # @within	sheepwars:sheeps/final_action
 #			sheepwars:sheeps/active/intergalactique/marker_tick
-#			sheepwars:v2.0.1/tick
+#			sheepwars:v2.0.2/tick
 #
 
 #> sheepwars:sheeps/final/disappear
