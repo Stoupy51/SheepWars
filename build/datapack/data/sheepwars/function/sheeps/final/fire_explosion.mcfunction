@@ -14,7 +14,7 @@
 
 # Particles and sound
 particle explosion_emitter ~ ~ ~ 0.5 0.5 0.5 0.1 1
-playsound entity.generic.explode block @a ~ ~ ~ 1 1 0.3
+playsound entity.generic.explode block @a[distance=..42] ~ ~ ~ 1 1 0.3
 
 ## Tag the player that launched the sheep
 # Get player UUID
