@@ -37,7 +37,7 @@ execute if score @s sheepwars.data matches 320 run scoreboard players set @s she
 
 # If there is an arrow on the colored wool, remove the wool and launch a signal
 scoreboard players set #success sheepwars.data 0
-execute as @e[type=arrow,nbt={inGround:1b},distance=..1.69,limit=1] run function sheepwars:magic_wool/arrow
+execute as @e[type=arrow,nbt={inBlockState:{}},distance=..1.69,limit=1] run function sheepwars:magic_wool/arrow
 execute if score #success sheepwars.data matches 1 run setblock ~ ~ ~ air
 execute if score #success sheepwars.data matches 1 run kill @s
 
