@@ -35,5 +35,5 @@ team join sheepwars.sheeps
 effect give @s fire_resistance infinite 0 true
 
 # Remove fall damage
-attribute @s generic.safe_fall_distance base set 1024
+attribute @s safe_fall_distance base set 1024
 

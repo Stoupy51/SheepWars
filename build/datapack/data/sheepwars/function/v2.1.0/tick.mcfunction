@@ -1,7 +1,7 @@
 
-#> sheepwars:v2.0.2/tick
+#> sheepwars:v2.1.0/tick
 #
-# @within	sheepwars:v2.0.2/load/tick_verification
+# @within	sheepwars:v2.1.0/load/tick_verification
 #
 
 # Make disappear vehicle less "chercheur_rider"

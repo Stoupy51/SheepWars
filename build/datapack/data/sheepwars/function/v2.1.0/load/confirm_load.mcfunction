@@ -1,10 +1,10 @@
 
-#> sheepwars:v2.0.2/load/confirm_load
+#> sheepwars:v2.1.0/load/confirm_load
 #
-# @within	sheepwars:v2.0.2/load/secondary
+# @within	sheepwars:v2.1.0/load/secondary
 #
 
-tellraw @a[tag=convention.debug] {"text":"[Loaded SheepWars v2.0.2]","color":"green"}
+tellraw @a[tag=convention.debug] {"text":"[Loaded SheepWars v2.1.0]","color":"green"}
 
 scoreboard players set #sheepwars.loaded load.status 1
 
