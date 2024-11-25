@@ -18,7 +18,7 @@
 									"eat_seconds": 1024
 								},
 								"minecraft:lore": [
-									"{'text': 'SheepWars', 'italic': true, 'color': 'blue'}"
+									"{\"text\": \"SheepWars\", \"italic\": true, \"color\": \"blue\"}"
 								],
 								"minecraft:custom_data": {
 									"sheepwars": {"soutien": true},
