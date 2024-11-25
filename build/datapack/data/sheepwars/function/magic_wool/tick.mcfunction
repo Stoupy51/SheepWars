@@ -1,7 +1,7 @@
 
 #> sheepwars:magic_wool/tick
 #
-# @within	sheepwars:v2.2.0/tick
+# @within	sheepwars:v2.3.0/tick
 #
 
 #> sheepwars:magic_wool/tick
