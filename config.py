@@ -6,6 +6,7 @@ IGNORE_UNSET: bool = True							# If True, the program will ignore unset optionn
 
 
 # Folders
+ASSETS_FOLDER: str = f"{ROOT}/assets"				# Folder where the assets are stored
 MERGE_FOLDER: str = f"{ROOT}/merge"					# If a file exists in both merge and build folder, they will be merged. Otherwise, it's just copied.
 BUILD_FOLDER: str = f"{ROOT}/build"					# Folder where the final datapack and resource pack are built
 LIBS_FOLDER: str = f"{ROOT}/libs"					# The libraries are copied to the build destination, and merged with the datapack using Weld
@@ -31,6 +32,7 @@ SOURCE_LORE: list[dict] = [{"text": PROJECT_NAME,"italic":True,"color":"blue"}]	
 configuration = {
 	"ignore_unset": IGNORE_UNSET,
 
+	"assets_folder": ASSETS_FOLDER,
 	"merge_folder": MERGE_FOLDER,
 	"build_folder": BUILD_FOLDER,
 	"libs_folder": LIBS_FOLDER,
