@@ -2,104 +2,91 @@
 	"explosif": {
 		"id": "minecraft:red_wool",
 		"item_name": "{\"text\":\"Mouton Explosif\",\"color\":\"red\"}",
-		"food": {"saturation": 0,"nutrition": 0,"can_always_eat": true,"eat_seconds": 1024},
-		"consumable": {},
+		"consumable": {"consume_seconds": 1024},
 		"lore": ["{\"text\": \"SheepWars\", \"italic\": true, \"color\": \"blue\"}"],
 		"custom_data": {"sheepwars": {"explosif": true},"smithed": {"ignore": {"functionality": true,"crafting": true}}}
 	},
 	"tenebreux": {
 		"id": "minecraft:black_wool",
 		"item_name": "{\"text\":\"Mouton Ténébreux\",\"color\":\"dark_gray\"}",
-		"food": {"saturation": 0,"nutrition": 0,"can_always_eat": true,"eat_seconds": 1024},
-		"consumable": {},
+		"consumable": {"consume_seconds": 1024},
 		"lore": ["{\"text\": \"SheepWars\", \"italic\": true, \"color\": \"blue\"}"],
 		"custom_data": {"sheepwars": {"tenebreux": true},"smithed": {"ignore": {"functionality": true,"crafting": true}}}
 	},
 	"glouton": {
 		"id": "minecraft:green_wool",
 		"item_name": "{\"text\":\"Mouton Glouton\",\"color\":\"green\"}",
-		"food": {"saturation": 0,"nutrition": 0,"can_always_eat": true,"eat_seconds": 1024},
-		"consumable": {},
+		"consumable": {"consume_seconds": 1024},
 		"lore": ["{\"text\": \"SheepWars\", \"italic\": true, \"color\": \"blue\"}"],
 		"custom_data": {"sheepwars": {"glouton": true},"smithed": {"ignore": {"functionality": true,"crafting": true}}}
 	},
 	"sismique": {
 		"id": "minecraft:brown_wool",
 		"item_name": "{\"text\":\"Mouton Sismique\",\"color\":\"#B37520\"}",
-		"food": {"saturation": 0,"nutrition": 0,"can_always_eat": true,"eat_seconds": 1024},
-		"consumable": {},
+		"consumable": {"consume_seconds": 1024},
 		"lore": ["{\"text\": \"SheepWars\", \"italic\": true, \"color\": \"blue\"}"],
 		"custom_data": {"sheepwars": {"sismique": true},"smithed": {"ignore": {"functionality": true,"crafting": true}}}
 	},
 	"foudroyant": {
 		"id": "minecraft:yellow_wool",
 		"item_name": "{\"text\":\"Mouton Foudroyant\",\"color\":\"yellow\"}",
-		"food": {"saturation": 0,"nutrition": 0,"can_always_eat": true,"eat_seconds": 1024},
-		"consumable": {},
+		"consumable": {"consume_seconds": 1024},
 		"lore": ["{\"text\": \"SheepWars\", \"italic\": true, \"color\": \"blue\"}"],
 		"custom_data": {"sheepwars": {"foudroyant": true},"smithed": {"ignore": {"functionality": true,"crafting": true}}}
 	},
 	"incendiaire": {
 		"id": "minecraft:orange_wool",
 		"item_name": "{\"text\":\"Mouton Incendiaire\",\"color\":\"gold\"}",
-		"food": {"saturation": 0,"nutrition": 0,"can_always_eat": true,"eat_seconds": 1024},
-		"consumable": {},
+		"consumable": {"consume_seconds": 1024},
 		"lore": ["{\"text\": \"SheepWars\", \"italic\": true, \"color\": \"blue\"}"],
 		"custom_data": {"sheepwars": {"incendiaire": true},"smithed": {"ignore": {"functionality": true,"crafting": true}}}
 	},
 	"glace": {
 		"id": "minecraft:light_blue_wool",
 		"item_name": "{\"text\":\"Mouton Glacé\",\"color\":\"aqua\"}",
-		"food": {"saturation": 0,"nutrition": 0,"can_always_eat": true,"eat_seconds": 1024},
-		"consumable": {},
+		"consumable": {"consume_seconds": 1024},
 		"lore": ["{\"text\": \"SheepWars\", \"italic\": true, \"color\": \"blue\"}"],
 		"custom_data": {"sheepwars": {"glace": true},"smithed": {"ignore": {"functionality": true,"crafting": true}}}
 	},
 	"fragmentation": {
 		"id": "minecraft:light_gray_wool",
 		"item_name": "{\"text\":\"Mouton Fragmentation\",\"color\":\"gray\"}",
-		"food": {"saturation": 0,"nutrition": 0,"can_always_eat": true,"eat_seconds": 1024},
-		"consumable": {},
+		"consumable": {"consume_seconds": 1024},
 		"lore": ["{\"text\": \"SheepWars\", \"italic\": true, \"color\": \"blue\"}"],
 		"custom_data": {"sheepwars": {"fragmentation": true},"smithed": {"ignore": {"functionality": true,"crafting": true}}}
 	},
 	"chercheur": {
 		"id": "minecraft:lime_wool",
 		"item_name": "{\"text\":\"Mouton Chercheur\",\"color\":\"green\"}",
-		"food": {"saturation": 0,"nutrition": 0,"can_always_eat": true,"eat_seconds": 1024},
-		"consumable": {},
+		"consumable": {"consume_seconds": 1024},
 		"lore": ["{\"text\": \"SheepWars\", \"italic\": true, \"color\": \"blue\"}"],
 		"custom_data": {"sheepwars": {"chercheur": true},"smithed": {"ignore": {"functionality": true,"crafting": true}}}
 	},
 	"distorsion": {
 		"id": "minecraft:purple_wool",
 		"item_name": "{\"text\":\"Mouton Distorsion\",\"color\":\"dark_purple\"}",
-		"food": {"saturation": 0,"nutrition": 0,"can_always_eat": true,"eat_seconds": 1024},
-		"consumable": {},
+		"consumable": {"consume_seconds": 1024},
 		"lore": ["{\"text\": \"SheepWars\", \"italic\": true, \"color\": \"blue\"}"],
 		"custom_data": {"sheepwars": {"distorsion": true},"smithed": {"ignore": {"functionality": true,"crafting": true}}}
 	},
 	"soutien": {
 		"id": "minecraft:pink_wool",
 		"item_name": "{\"text\":\"Mouton de Soutien\",\"color\":\"#FF69B4\"}",
-		"food": {"saturation": 0,"nutrition": 0,"can_always_eat": true,"eat_seconds": 1024},
-		"consumable": {},
+		"consumable": {"consume_seconds": 1024},
 		"lore": ["{\"text\": \"SheepWars\", \"italic\": true, \"color\": \"blue\"}"],
 		"custom_data": {"sheepwars": {"soutien": true},"smithed": {"ignore": {"functionality": true,"crafting": true}}}
 	},
 	"abordage": {
 		"id": "minecraft:white_wool",
 		"item_name": "{\"text\":\"Mouton d'Abordage\",\"color\":\"white\"}",
-		"food": {"saturation": 0,"nutrition": 0,"can_always_eat": true,"eat_seconds": 1024},
-		"consumable": {},
+		"consumable": {"consume_seconds": 1024},
 		"lore": ["{\"text\": \"SheepWars\", \"italic\": true, \"color\": \"blue\"}"],
 		"custom_data": {"sheepwars": {"abordage": true},"smithed": {"ignore": {"functionality": true,"crafting": true}}}
 	},
 	"intergalactique": {
 		"id": "minecraft:blue_wool",
 		"item_name": "{\"text\":\"Mouton Intergalactique\",\"color\":\"blue\"}",
-		"food": {"saturation": 0,"nutrition": 0,"can_always_eat": true,"eat_seconds": 1024},
-		"consumable": {},
+		"consumable": {"consume_seconds": 1024},
 		"lore": ["{\"text\": \"SheepWars\", \"italic\": true, \"color\": \"blue\"}"],
 		"custom_data": {"sheepwars": {"intergalactique": true},"smithed": {"ignore": {"functionality": true,"crafting": true}}}
 	}

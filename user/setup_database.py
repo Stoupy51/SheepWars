@@ -20,8 +20,7 @@ def main(config: dict) -> dict[str, dict]:
 		"intergalactique":	{"id":"minecraft:blue_wool",		"item_name":'{"text":"Mouton Intergalactique","color":"blue"}'},
 	}
 	for data in database.values():
-		data["food"] = {"saturation":0, "nutrition":0, "can_always_eat":True, "eat_seconds":1024}
-		data["consumable"] = {}
+		data["consumable"] = {"consume_seconds":1024}
 
 	# Final adjustments
 	add_item_name_and_lore_if_missing(config, database)

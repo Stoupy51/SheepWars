@@ -11,13 +11,9 @@
 							"function": "minecraft:set_components",
 							"components": {
 								"minecraft:item_name": "{\"text\":\"Mouton Ténébreux\",\"color\":\"dark_gray\"}",
-								"minecraft:food": {
-									"saturation": 0,
-									"nutrition": 0,
-									"can_always_eat": true,
-									"eat_seconds": 1024
+								"minecraft:consumable": {
+									"consume_seconds": 1024
 								},
-								"minecraft:consumable": {},
 								"minecraft:lore": [
 									"{\"text\": \"SheepWars\", \"italic\": true, \"color\": \"blue\"}"
 								],
