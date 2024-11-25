@@ -9,7 +9,7 @@ IGNORE_UNSET: bool = True							# If True, the program will ignore unset optionn
 MERGE_FOLDER: str = f"{ROOT}/merge"					# If a file exists in both merge and build folder, they will be merged. Otherwise, it's just copied.
 BUILD_FOLDER: str = f"{ROOT}/build"					# Folder where the final datapack and resource pack are built
 LIBS_FOLDER: str = f"{ROOT}/libs"					# The libraries are copied to the build destination, and merged with the datapack using Weld
-BUILD_COPY_DESTINATIONS: tuple[list, list] = (["D:/latest_snapshot/world/datapacks"], None)	# Can be empty lists if you don't want to copy the generated files
+BUILD_COPY_DESTINATIONS: tuple[list, list] = (["D:/latest_snapshot/world/datapacks"], ["D:/minecraft/snapshot/resourcepacks"])	# Can be empty lists if you don't want to copy the generated files to other folders.
 
 
 # Dev constants
