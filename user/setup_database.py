@@ -21,6 +21,7 @@ def main(config: dict) -> dict[str, dict]:
 	}
 	for data in database.values():
 		data["food"] = {"saturation":0, "nutrition":0, "can_always_eat":True, "eat_seconds":1024}
+		data["consumable"] = {}
 
 	# Final adjustments
 	add_item_name_and_lore_if_missing(config, database)
