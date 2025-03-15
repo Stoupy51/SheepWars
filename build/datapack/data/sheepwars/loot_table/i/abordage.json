@@ -10,12 +10,15 @@
 						{
 							"function": "minecraft:set_components",
 							"components": {
-								"minecraft:item_name": "{\"text\":\"Mouton d'Abordage\",\"color\":\"white\"}",
+								"minecraft:item_name": {
+									"text": "Mouton d'Abordage",
+									"color": "white"
+								},
 								"minecraft:consumable": {
 									"consume_seconds": 1024
 								},
 								"minecraft:lore": [
-									"{\"text\": \"SheepWars\", \"italic\": true, \"color\": \"blue\"}"
+									[{"text": "SheepWars","italic": true,"color": "blue"}]
 								],
 								"minecraft:custom_data": {
 									"sheepwars": {"abordage": true},

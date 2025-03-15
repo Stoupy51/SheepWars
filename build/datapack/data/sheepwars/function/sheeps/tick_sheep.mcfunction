@@ -1,7 +1,7 @@
 
 #> sheepwars:sheeps/tick_sheep
 #
-# @within	sheepwars:v2.3.1/tick
+# @within	sheepwars:v2.3.2/tick
 #
 
 #> sheepwars:sheeps/tick_sheep
