@@ -1,11 +1,11 @@
 
-#> sheepwars:v2.3.2/load/confirm_load
+#> sheepwars:v2.3.3/load/confirm_load
 #
-# @within	sheepwars:v2.3.2/load/secondary
+# @within	sheepwars:v2.3.3/load/secondary
 #
 
 # Confirm load
-tellraw @a[tag=convention.debug] {"text":"[Loaded SheepWars v2.3.2]","color":"green"}
+tellraw @a[tag=convention.debug] {"text":"[Loaded SheepWars v2.3.3]","color":"green"}
 scoreboard players set #sheepwars.loaded load.status 1
 
 # Items storage

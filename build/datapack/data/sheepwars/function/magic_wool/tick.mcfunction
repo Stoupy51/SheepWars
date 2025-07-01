@@ -1,7 +1,7 @@
 
 #> sheepwars:magic_wool/tick
 #
-# @within	sheepwars:v2.3.2/tick
+# @within	sheepwars:v2.3.3/tick
 #
 # @executed			as & at the colored wool marker
 # 

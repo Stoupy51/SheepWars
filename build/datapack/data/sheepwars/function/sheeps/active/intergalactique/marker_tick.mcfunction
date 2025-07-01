@@ -1,7 +1,7 @@
 
 #> sheepwars:sheeps/active/intergalactique/marker_tick
 #
-# @within	sheepwars:v2.3.2/tick
+# @within	sheepwars:v2.3.3/tick
 #
 # @executed			as & at an intergalactique marker
 # 
