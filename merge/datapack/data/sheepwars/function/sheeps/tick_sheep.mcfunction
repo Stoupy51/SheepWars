@@ -1,7 +1,6 @@
 
 #> sheepwars:sheeps/tick_sheep
 #
-# @within			sheepwars:tick
 # @executed			as & at the sheep
 #
 # @description		Manages the sheep actions

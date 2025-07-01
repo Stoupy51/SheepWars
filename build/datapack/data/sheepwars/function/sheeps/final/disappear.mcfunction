@@ -1,16 +1,12 @@
 
 #> sheepwars:sheeps/final/disappear
 #
-# @within	sheepwars:sheeps/final_action
-#			sheepwars:sheeps/active/intergalactique/marker_tick
+# @within	sheepwars:sheeps/active/intergalactique/marker_tick
+#			sheepwars:sheeps/final_action
 #			sheepwars:v2.3.2/tick
 #
-
-#> sheepwars:sheeps/final/disappear
-#
-# @within			sheepwars:sheeps/final_action
 # @executed			as & at the sheep
-#
+# 
 # @description		Remove the sheep from the game.
 #
 

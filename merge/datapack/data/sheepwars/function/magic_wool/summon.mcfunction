@@ -1,7 +1,6 @@
 
 #> sheepwars:magic_wool/summon
 #
-# @within			Nothing (must be called)
 # @executed			at the middle position of the requested area
 #
 # @input score		#dx sheepwars.data : The x offset

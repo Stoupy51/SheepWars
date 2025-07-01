@@ -3,12 +3,8 @@
 #
 # @within	sheepwars:right_click/all
 #
-
-#> sheepwars:sheeps/summon/fragmentation
-#
-# @within			sheepwars:right_click/all
 # @executed			as & at the player
-#
+# 
 # @description		Summons a sheep with tag "fragmentation" and launches it in the direction the player is looking at.
 #
 

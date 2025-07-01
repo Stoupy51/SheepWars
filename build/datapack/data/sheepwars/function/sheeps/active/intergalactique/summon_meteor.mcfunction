@@ -3,12 +3,8 @@
 #
 # @within	sheepwars:sheeps/active/intergalactique/main
 #
-
-#> sheepwars:sheeps/active/intergalactique/summon_meteor
-#
-# @within			sheepwars:sheeps/active/intergalactique/main
 # @executed			as the new marker & at the sheep
-#
+# 
 # @description		Summons meteors on the sheep with random offsets
 #
 

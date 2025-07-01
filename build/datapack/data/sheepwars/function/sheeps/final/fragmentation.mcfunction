@@ -3,12 +3,8 @@
 #
 # @within	sheepwars:sheeps/final_action
 #
-
-#> sheepwars:sheeps/final/fragmentation
-#
-# @within			sheepwars:sheeps/final_action
 # @executed			as & at the sheep
-#
+# 
 # @description		Explode the sheep with a normal explosion and summon 4 new sheeps that will explode after 1 second.
 #
 
@@ -61,5 +57,4 @@ execute as @e[type=sheep,tag=sheepwars.new] run function sheepwars:utils/new_she
 
 # Remove the tag from the owner
 tag @a[tag=sheepwars.owner] remove sheepwars.owner
-
 

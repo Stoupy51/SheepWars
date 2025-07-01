@@ -1,0 +1,17 @@
+{
+	"pools": [
+		{"rolls": 1,"entries": [{"type": "minecraft:loot_table","value": "sheepwars:i/explosif"}]},
+		{"rolls": 1,"entries": [{"type": "minecraft:loot_table","value": "sheepwars:i/tenebreux"}]},
+		{"rolls": 1,"entries": [{"type": "minecraft:loot_table","value": "sheepwars:i/glouton"}]},
+		{"rolls": 1,"entries": [{"type": "minecraft:loot_table","value": "sheepwars:i/sismique"}]},
+		{"rolls": 1,"entries": [{"type": "minecraft:loot_table","value": "sheepwars:i/foudroyant"}]},
+		{"rolls": 1,"entries": [{"type": "minecraft:loot_table","value": "sheepwars:i/incendiaire"}]},
+		{"rolls": 1,"entries": [{"type": "minecraft:loot_table","value": "sheepwars:i/glace"}]},
+		{"rolls": 1,"entries": [{"type": "minecraft:loot_table","value": "sheepwars:i/fragmentation"}]},
+		{"rolls": 1,"entries": [{"type": "minecraft:loot_table","value": "sheepwars:i/chercheur"}]},
+		{"rolls": 1,"entries": [{"type": "minecraft:loot_table","value": "sheepwars:i/distorsion"}]},
+		{"rolls": 1,"entries": [{"type": "minecraft:loot_table","value": "sheepwars:i/soutien"}]},
+		{"rolls": 1,"entries": [{"type": "minecraft:loot_table","value": "sheepwars:i/abordage"}]},
+		{"rolls": 1,"entries": [{"type": "minecraft:loot_table","value": "sheepwars:i/intergalactique"}]}
+	]
+}

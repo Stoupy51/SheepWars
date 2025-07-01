@@ -1,7 +1,6 @@
 
 #> sheepwars:utils/player_damaged
 #
-# @within			sheepwars:sheeps/final/*
 # @executed			as a player
 #
 # @output victim	The player who has been damaged (executing the function tag)

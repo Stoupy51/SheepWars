@@ -1,7 +1,6 @@
 
 #> sheepwars:sheeps/passive_action
 #
-# @within			sheepwars:sheeps/tick_sheep
 # @executed			as & at the sheep
 #
 # @description		Manages the sheep passive actions depending on the sheep type

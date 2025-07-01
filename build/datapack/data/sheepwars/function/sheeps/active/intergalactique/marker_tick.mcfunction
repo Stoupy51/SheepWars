@@ -3,12 +3,8 @@
 #
 # @within	sheepwars:v2.3.2/tick
 #
-
-#> sheepwars:sheeps/active/intergalactique/marker_tick
-#
-# @within			sheepwars:tick
 # @executed			as & at an intergalactique marker
-#
+# 
 # @description		Function executed every tick, it handles sheeps, wools, and right click detection.
 #
 
@@ -24,5 +20,4 @@ scoreboard players set #is_air sheepwars.data 0
 execute at @s if block ~ ~ ~ air run scoreboard players set #is_air sheepwars.data 1
 execute at @s if score #is_air sheepwars.data matches 0 run function sheepwars:sheeps/final/normal_explosion
 execute at @s if score #is_air sheepwars.data matches 0 run function sheepwars:sheeps/final/disappear
-
 

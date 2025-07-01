@@ -1,7 +1,6 @@
 
 #> sheepwars:unload
 #
-# @within			none
 # @executed			unknown context
 #
 # @description		Function that unload everything from the SheepWars datapack

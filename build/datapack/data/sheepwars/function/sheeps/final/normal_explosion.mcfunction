@@ -1,15 +1,11 @@
 
 #> sheepwars:sheeps/final/normal_explosion
 #
-# @within	sheepwars:sheeps/final_action
-#			sheepwars:sheeps/active/intergalactique/marker_tick
+# @within	sheepwars:sheeps/active/intergalactique/marker_tick
+#			sheepwars:sheeps/final_action
 #
-
-#> sheepwars:sheeps/final/normal_explosion
-#
-# @within			sheepwars:sheeps/final_action
 # @executed			as & at the sheep
-#
+# 
 # @description		Explode the sheep with a normal explosion
 #
 
@@ -48,7 +44,6 @@ execute as @a[gamemode=!creative,gamemode=!spectator,distance=..4] run damage @s
 execute as @a[gamemode=!creative,gamemode=!spectator,distance=..5] run damage @s[tag=sheepwars.owner] 4 explosion
 execute as @a[gamemode=!creative,gamemode=!spectator,distance=..6] run damage @s[tag=sheepwars.owner] 2 explosion
 
-
 # For each player, check if the damage killed him
 execute as @a[tag=sheepwars.damaged] run function sheepwars:utils/player_damaged
 
@@ -57,5 +52,4 @@ function realistic_explosion:explode
 
 # Remove the tag from the owner
 tag @a[tag=sheepwars.owner] remove sheepwars.owner
-
 

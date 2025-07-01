@@ -1,7 +1,6 @@
 
 #> sheepwars:sheeps/active/intergalactique/marker_tick
 #
-# @within			sheepwars:tick
 # @executed			as & at an intergalactique marker
 #
 # @description		Function executed every tick, it handles sheeps, wools, and right click detection.

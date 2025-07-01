@@ -1,10 +1,13 @@
 
 # Import database helper
-from python_datapack.utils.database_helper import *
+from stewbeet import Context, Mem, add_item_name_and_lore_if_missing, add_private_custom_data_for_namespace, add_smithed_ignore_vanilla_behaviours_convention
+
 
 # Main function should return a database
-def main(config: dict) -> dict[str, dict]:
-	database: dict[str,dict] = {
+def beet_default(ctx: Context):
+	if Mem.ctx is None:
+		Mem.ctx = ctx
+	Mem.definitions = {
 		"explosif":			{"id":"minecraft:red_wool",			"item_name":{"text":"Mouton Explosif","color":"red"}},
 		"tenebreux":		{"id":"minecraft:black_wool",		"item_name":{"text":"Mouton Ténébreux","color":"dark_gray"}},
 		"glouton":			{"id":"minecraft:green_wool",		"item_name":{"text":"Mouton Glouton","color":"green"}},
@@ -19,15 +22,11 @@ def main(config: dict) -> dict[str, dict]:
 		"abordage":			{"id":"minecraft:white_wool",		"item_name":{"text":"Mouton d'Abordage","color":"white"}},
 		"intergalactique":	{"id":"minecraft:blue_wool",		"item_name":{"text":"Mouton Intergalactique","color":"blue"}},
 	}
-	for data in database.values():
+	for data in Mem.definitions.values():
 		data["consumable"] = {"consume_seconds":1024}
 
 	# Final adjustments
-	add_item_name_and_lore_if_missing(config, database)
-	add_private_custom_data_for_namespace(config, database)
-	add_smithed_ignore_vanilla_behaviours_convention(database)
-	print()
-
-	# Return database
-	return database
+	add_item_name_and_lore_if_missing()
+	add_private_custom_data_for_namespace()
+	add_smithed_ignore_vanilla_behaviours_convention()
 

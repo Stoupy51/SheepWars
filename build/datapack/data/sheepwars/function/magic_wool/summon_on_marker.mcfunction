@@ -3,16 +3,12 @@
 #
 # @within	sheepwars:magic_wool/summon
 #
-
-#> sheepwars:magic_wool/summon_on_marker
-#
-# @within			sheepwars:magic_wool/summon
 # @executed			at the middle position of the requested area
-#
+# 
 # @input score		#dx sheepwars.data : The x offset
 # @input score		#dy sheepwars.data : The y offset
 # @input score		#dz sheepwars.data : The z offset
-#
+# 
 # @description		Get random offsets
 #
 

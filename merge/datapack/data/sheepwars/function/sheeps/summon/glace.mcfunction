@@ -1,7 +1,6 @@
 
 #> sheepwars:sheeps/summon/glace
 #
-# @within			sheepwars:right_click/all
 # @executed			as & at the player
 #
 # @description		Summons a sheep with tag "glace" and launches it in the direction the player is looking at.

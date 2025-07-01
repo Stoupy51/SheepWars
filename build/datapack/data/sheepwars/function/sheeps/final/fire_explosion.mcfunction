@@ -3,12 +3,8 @@
 #
 # @within	sheepwars:sheeps/final_action
 #
-
-#> sheepwars:sheeps/final/fire_explosion
-#
-# @within			sheepwars:sheeps/final_action
 # @executed			as & at the sheep
-#
+# 
 # @description		Explode the sheep with an explosion that creates fire
 #
 
@@ -63,5 +59,4 @@ scoreboard players reset #falling_fire realistic_explosion.data
 
 # Remove the tag from the owner
 tag @a[tag=sheepwars.owner] remove sheepwars.owner
-
 

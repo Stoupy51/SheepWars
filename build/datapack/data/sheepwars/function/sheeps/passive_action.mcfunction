@@ -3,12 +3,8 @@
 #
 # @within	sheepwars:sheeps/tick_sheep
 #
-
-#> sheepwars:sheeps/passive_action
-#
-# @within			sheepwars:sheeps/tick_sheep
 # @executed			as & at the sheep
-#
+# 
 # @description		Manages the sheep passive actions depending on the sheep type
 #
 
@@ -68,5 +64,4 @@ execute if entity @s[tag=sheepwars.intergalactique,scores={sheepwars.data=70}] r
 execute if entity @s[tag=sheepwars.intergalactique,scores={sheepwars.data=90}] run function sheepwars:sheeps/active/intergalactique/main
 execute if entity @s[tag=sheepwars.intergalactique,scores={sheepwars.data=110}] run function sheepwars:sheeps/active/intergalactique/main
 execute if entity @s[tag=sheepwars.intergalactique,scores={sheepwars.data=130}] run function sheepwars:sheeps/active/intergalactique/main
-
 

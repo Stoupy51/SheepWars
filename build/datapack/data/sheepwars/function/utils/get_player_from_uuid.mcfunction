@@ -5,15 +5,11 @@
 #			sheepwars:sheeps/final/fragmentation
 #			sheepwars:sheeps/final/normal_explosion
 #
-
-#> sheepwars:utils/get_player_from_uuid
-#
-# @within			sheepwars:sheeps/final/normal_explosion
 # @executed			as a player
-#
+# 
 # @input storage	sheepwars:main UUID : The player UUID that launched the sheep.
 # @output player	Tagged player that launched the sheep.
-#
+# 
 # @description		Compare the player UUID with the one stored in the sheepwars:main storage.
 #
 
@@ -26,5 +22,4 @@ execute store success score #replaced sheepwars.data run data modify storage she
 
 # If the player UUID matches (not replaced), add a tag to the player
 execute if score #replaced sheepwars.data matches 0 run tag @s add sheepwars.owner
-
 

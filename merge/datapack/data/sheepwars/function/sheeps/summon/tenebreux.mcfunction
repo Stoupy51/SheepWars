@@ -1,7 +1,6 @@
 
 #> sheepwars:sheeps/summon/tenebreux
 #
-# @within			sheepwars:right_click/all
 # @executed			as & at the player
 #
 # @description		Summons a sheep with tag "tenebreux" and launches it in the direction the player is looking at.

@@ -5,17 +5,13 @@
 #			sheepwars:sheeps/final/fragmentation
 #			sheepwars:sheeps/final/normal_explosion
 #
-
-#> sheepwars:utils/player_damaged
-#
-# @within			sheepwars:sheeps/final/*
 # @executed			as a player
-#
+# 
 # @output victim	The player who has been damaged (executing the function tag)
 # @output damager	The owner of the sheep who killed the victim (tagged with "sheepwars.owner")
-#
+# 
 # @description		Send a function tag signal if he is dead, and remove the damage tag.
-#					The function tag signal can be used to customize the death of the player (message, etc.)
+# 				The function tag signal can be used to customize the death of the player (message, etc.)
 #
 
 # Send a function tag signal

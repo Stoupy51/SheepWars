@@ -18,11 +18,19 @@
 									"consume_seconds": 1024
 								},
 								"minecraft:lore": [
-									[{"text": "SheepWars","italic": true,"color": "blue"}]
+									[
+										"",
+										{"text": "I","color": "white","italic": false,"font": "sheepwars:icons"},
+										{"text": " SheepWars","italic": true,"color": "blue"}
+									]
 								],
 								"minecraft:custom_data": {
-									"sheepwars": {"soutien": true},
-									"smithed": {"ignore": {"functionality": true,"crafting": true}}
+									"sheepwars": {
+										"soutien": true
+									},
+									"smithed": {
+										"ignore": {"functionality": true,"crafting": true}
+									}
 								}
 							}
 						}
@@ -32,4 +40,3 @@
 		}
 	]
 }
-

@@ -1,13 +1,14 @@
 
 # Imports
-from python_datapack.utils.database_helper import *
+from stewbeet import Context, write_function, write_load_file, write_tick_file
+
 
 # Main function is run just before making finalyzing the build process (zip, headers, lang, ...)
-def main(config: dict) -> None:
-	ns: str = config["namespace"]
-	
+def beet_default(ctx: Context) -> None:
+	ns: str = ctx.project_id
+
 	# Add scoreboard objectives
-	write_to_load_file(config, f"""
+	write_load_file(f"""
 ## Scoreboards
 # Delete all scoreboards
 scoreboard objectives remove {ns}.data
@@ -25,9 +26,9 @@ scoreboard objectives add {ns}.launched_count dummy
 team add {ns}.sheeps
 team modify {ns}.sheeps collisionRule never
 """)
-	
+
 	# Write tick
-	write_to_versioned_function(config, "tick", f"""
+	write_tick_file(f"""
 # Make disappear vehicle less "chercheur_rider"
 execute as @e[type=husk,tag={ns}.chercheur_rider,predicate=!{ns}:has_vehicle] run function {ns}:sheeps/final/disappear
 
@@ -43,9 +44,9 @@ execute as @e[type=marker,tag={ns}.intergalactique_marker] at @s run function {n
 # Magic wools
 execute as @e[type=marker,tag={ns}.magic_wool] at @s run function {ns}:magic_wool/tick
 """)
-	
+
 	# Write remove levitation function
-	write_to_function(config, f"{ns}:sheeps/final/remove_levitation", f"""
+	write_function(f"{ns}:sheeps/final/remove_levitation", f"""
 # Remove levitation effect
 effect clear @s levitation
 

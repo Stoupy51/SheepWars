@@ -1,18 +1,17 @@
 {
-	"criteria": {
-		"requirement": {
-			"trigger": "minecraft:using_item",
-			"conditions": {
-				"item": {
-					"predicates": {
-						"minecraft:custom_data": "{sheepwars:{}}"
-					}
-				}
-			}
-		}
-	},
-	"rewards": {
-		"function": "sheepwars:right_click/all"
-	}
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": "{sheepwars:{}}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "sheepwars:right_click/all"
+  }
 }
-

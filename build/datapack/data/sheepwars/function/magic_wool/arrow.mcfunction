@@ -3,12 +3,8 @@
 #
 # @within	sheepwars:magic_wool/tick
 #
-
-#> sheepwars:magic_wool/arrow
-#
-# @within			sheepwars:magic_wool/tick
 # @executed			as the arrow & at the colored wool marker
-#
+# 
 # @description		Launches a signal (function tag) on the arrow owner (origin) and kill the arrow
 #
 

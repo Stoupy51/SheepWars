@@ -3,12 +3,8 @@
 #
 # @within	sheepwars:sheeps/passive_action
 #
-
-#> sheepwars:sheeps/active/glace/main
-#
-# @within			sheepwars:sheeps/passive_action
 # @executed			as & at the sheep (position offset)
-#
+# 
 # @description		Look up a 11x11x11 area for air blocks and replace them with snow layers if possible (if the block under is air)
 #
 

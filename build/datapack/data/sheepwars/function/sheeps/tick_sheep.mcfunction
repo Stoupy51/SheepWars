@@ -3,12 +3,8 @@
 #
 # @within	sheepwars:v2.3.2/tick
 #
-
-#> sheepwars:sheeps/tick_sheep
-#
-# @within			sheepwars:tick
 # @executed			as & at the sheep
-#
+# 
 # @description		Manages the sheep actions
 #
 

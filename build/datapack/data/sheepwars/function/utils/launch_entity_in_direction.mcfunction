@@ -14,15 +14,11 @@
 #			sheepwars:sheeps/summon/sismique
 #			sheepwars:sheeps/summon/tenebreux
 #
-
-#> sheepwars:utils/launch_entity_in_direction
-#
-# @within			sheepwars:sheeps/summon/*
 # @executed			as & at a non-player entity (sheep, etc.)
-#
+# 
 # @input storage	sheepwars:main Rotation : 2D rotation of the entity
 # @input storage	sheepwars:main UUID : UUID of the player who launched the entity
-#
+# 
 # @description		Handles the launch of an entity in a direction, remove "new" tag and store launcher's UUID.
 #
 

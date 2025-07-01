@@ -1,7 +1,6 @@
 
 #> sheepwars:sheeps/final/disappear
 #
-# @within			sheepwars:sheeps/final_action
 # @executed			as & at the sheep
 #
 # @description		Remove the sheep from the game.

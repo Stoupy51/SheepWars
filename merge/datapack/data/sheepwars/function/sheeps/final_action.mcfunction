@@ -1,7 +1,6 @@
 
 #> sheepwars:sheeps/final_action
 #
-# @within			sheepwars:sheeps_sheep
 # @executed			as & at the sheep
 #
 # @description		Manages the final action of the sheep.

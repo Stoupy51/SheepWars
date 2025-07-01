@@ -1,7 +1,6 @@
 
 #> sheepwars:utils/get_marker_motion
 #
-# @within			sheepwars:utils/launch_entity_in_direction
 # @executed			as & at a non-player entity (sheep, etc.)
 #
 # @input storage	sheepwars:main Rotation : 2D rotation of the entity

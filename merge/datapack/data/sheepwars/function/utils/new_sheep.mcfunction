@@ -1,8 +1,6 @@
 
 #> sheepwars:utils/new_sheep
 #
-# @within			sheepwars:utils/launch_entity_in_direction
-# @within			sheepwars:sheeps/summon/soutien
 # @executed			as & at a non-player entity (sheep, etc.)
 #
 # @input storage	sheepwars:main Rotation : 2D rotation of the entity
