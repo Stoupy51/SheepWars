@@ -46,6 +46,8 @@ meta:
 
     # StewBeet specific configuration
     stewbeet:
+        source_lore: {"text":"SheepWars","color":"blue","italic": true}
+
         # Path where definitions debug information will be dumped
         definitions_debug: "definitions_debug.json"
         # Optional list of destination paths where generated files will be copied

@@ -18,11 +18,11 @@
 									"consume_seconds": 1024
 								},
 								"minecraft:lore": [
-									[
-										"",
-										{"text": "I","color": "white","italic": false,"font": "sheepwars:icons"},
-										{"text": " SheepWars","italic": true,"color": "blue"}
-									]
+									{
+										"text": "SheepWars",
+										"color": "blue",
+										"italic": true
+									}
 								],
 								"minecraft:custom_data": {
 									"sheepwars": {
