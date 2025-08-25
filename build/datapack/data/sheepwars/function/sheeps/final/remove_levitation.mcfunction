@@ -3,7 +3,7 @@
 #
 # @executed	at @s
 #
-# @within	sheepwars:v2.3.3/tick [ at @s ]
+# @within	sheepwars:v2.3.4/tick [ at @s ]
 #
 
 # Remove levitation effect
