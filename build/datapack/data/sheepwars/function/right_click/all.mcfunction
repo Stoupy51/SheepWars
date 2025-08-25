@@ -1,6 +1,8 @@
 
 #> sheepwars:right_click/all
 #
+# @executed	as the player & at current position
+#
 # @within	advancement sheepwars:using_item
 #
 

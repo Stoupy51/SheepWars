@@ -1,10 +1,10 @@
 
 #> sheepwars:sheeps/final/fragmentation
 #
+# @executed	as @e[type=sheep,tag=sheepwars.sheep] & at @s
+#
 # @within	sheepwars:sheeps/final_action
 #
-# @executed			as & at the sheep
-# 
 # @description		Explode the sheep with a normal explosion and summon 4 new sheeps that will explode after 1 second.
 #
 

@@ -1,11 +1,11 @@
 
 #> sheepwars:sheeps/final/normal_explosion
 #
-# @within	sheepwars:sheeps/active/intergalactique/marker_tick
+# @executed	at @s
+#
+# @within	sheepwars:sheeps/active/intergalactique/marker_tick [ at @s ]
 #			sheepwars:sheeps/final_action
 #
-# @executed			as & at the sheep
-# 
 # @description		Explode the sheep with a normal explosion
 #
 

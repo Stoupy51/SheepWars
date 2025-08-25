@@ -1,10 +1,10 @@
 
 #> sheepwars:magic_wool/tick
 #
-# @within	sheepwars:v2.3.3/tick
+# @executed	as @e[type=marker,tag=sheepwars.magic_wool] & at @s
 #
-# @executed			as & at the colored wool marker
-# 
+# @within	sheepwars:v2.3.3/tick [ as @e[type=marker,tag=sheepwars.magic_wool] & at @s ]
+#
 # @description		Updates the colored wool depending on the time, and launches a signal if there is an arrow on it.
 #
 

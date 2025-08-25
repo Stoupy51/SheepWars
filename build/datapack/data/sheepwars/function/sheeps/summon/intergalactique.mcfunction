@@ -1,10 +1,10 @@
 
 #> sheepwars:sheeps/summon/intergalactique
 #
+# @executed	as the player & at current position
+#
 # @within	sheepwars:right_click/all
 #
-# @executed			as & at the player
-# 
 # @description		Summons a sheep with tag "intergalactique" and launches it in the direction the player is looking at.
 #
 

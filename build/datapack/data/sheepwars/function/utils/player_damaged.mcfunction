@@ -1,12 +1,12 @@
 
 #> sheepwars:utils/player_damaged
 #
-# @within	sheepwars:sheeps/final/fire_explosion
-#			sheepwars:sheeps/final/fragmentation
-#			sheepwars:sheeps/final/normal_explosion
+# @executed	as @a[tag=sheepwars.damaged]
 #
-# @executed			as a player
-# 
+# @within	sheepwars:sheeps/final/fire_explosion [ as @a[tag=sheepwars.damaged] ]
+#			sheepwars:sheeps/final/fragmentation [ as @a[tag=sheepwars.damaged] ]
+#			sheepwars:sheeps/final/normal_explosion [ as @a[tag=sheepwars.damaged] ]
+#
 # @output victim	The player who has been damaged (executing the function tag)
 # @output damager	The owner of the sheep who killed the victim (tagged with "sheepwars.owner")
 # 

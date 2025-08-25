@@ -1,10 +1,10 @@
 
 #> sheepwars:sheeps/tick_sheep
 #
-# @within	sheepwars:v2.3.3/tick
+# @executed	as @e[type=sheep,tag=sheepwars.sheep] & at @s
 #
-# @executed			as & at the sheep
-# 
+# @within	sheepwars:v2.3.3/tick [ as @e[type=sheep,tag=sheepwars.sheep] & at @s ]
+#
 # @description		Manages the sheep actions
 #
 

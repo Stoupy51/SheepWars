@@ -1,10 +1,10 @@
 
 #> sheepwars:sheeps/summon/soutien
 #
+# @executed	as the player & at current position
+#
 # @within	sheepwars:right_click/all
 #
-# @executed			as & at the player
-# 
 # @description		Summons a sheep with tag "soutien" and apply NBT changes to it
 #
 

@@ -1,10 +1,10 @@
 
 #> sheepwars:unload
 #
+# @executed	unknown context
+#
 # @within	???
 #
-# @executed			unknown context
-# 
 # @description		Function that unload everything from the SheepWars datapack
 #
 

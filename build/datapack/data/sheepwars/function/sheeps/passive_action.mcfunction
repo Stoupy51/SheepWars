@@ -1,10 +1,10 @@
 
 #> sheepwars:sheeps/passive_action
 #
+# @executed	as @e[type=sheep,tag=sheepwars.sheep] & at @s
+#
 # @within	sheepwars:sheeps/tick_sheep
 #
-# @executed			as & at the sheep
-# 
 # @description		Manages the sheep passive actions depending on the sheep type
 #
 

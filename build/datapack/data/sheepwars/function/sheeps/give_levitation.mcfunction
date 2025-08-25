@@ -1,7 +1,9 @@
 
 #> sheepwars:sheeps/give_levitation
 #
-# @within	sheepwars:sheeps/passive_action
+# @executed	as @a[gamemode=!spectator,distance=..6] & at @s
+#
+# @within	sheepwars:sheeps/passive_action [ as @a[gamemode=!spectator,distance=..6] & at @s ]
 #
 
 # Give levitation

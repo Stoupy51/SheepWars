@@ -1,10 +1,20 @@
 
 #> sheepwars:sheeps/active/glace/1st_dimension
 #
-# @within	sheepwars:sheeps/active/glace/main
+# @executed	positioned ~5 ~ ~
 #
-# @executed			as & at the sheep (position offset)
-# 
+# @within	sheepwars:sheeps/active/glace/main [ positioned ~5 ~ ~ ]
+#			sheepwars:sheeps/active/glace/main [ positioned ~4 ~ ~ ]
+#			sheepwars:sheeps/active/glace/main [ positioned ~3 ~ ~ ]
+#			sheepwars:sheeps/active/glace/main [ positioned ~2 ~ ~ ]
+#			sheepwars:sheeps/active/glace/main [ positioned ~1 ~ ~ ]
+#			sheepwars:sheeps/active/glace/main [ positioned ~0 ~ ~ ]
+#			sheepwars:sheeps/active/glace/main [ positioned ~-1 ~ ~ ]
+#			sheepwars:sheeps/active/glace/main [ positioned ~-2 ~ ~ ]
+#			sheepwars:sheeps/active/glace/main [ positioned ~-3 ~ ~ ]
+#			sheepwars:sheeps/active/glace/main [ positioned ~-4 ~ ~ ]
+#			sheepwars:sheeps/active/glace/main [ positioned ~-5 ~ ~ ]
+#
 # @description		Look up a 11x11 area for air blocks and replace them with snow layers if possible (if the block under is not air)
 #
 

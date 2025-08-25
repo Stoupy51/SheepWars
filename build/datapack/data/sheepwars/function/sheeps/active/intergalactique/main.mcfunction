@@ -1,10 +1,10 @@
 
 #> sheepwars:sheeps/active/intergalactique/main
 #
+# @executed	as @e[type=sheep,tag=sheepwars.sheep] & at @s
+#
 # @within	sheepwars:sheeps/passive_action
 #
-# @executed			as & at the sheep
-# 
 # @description		Summons meteors on the sheep with random offsets
 #
 

@@ -1,10 +1,10 @@
 
 #> sheepwars:sheeps/summon/glouton
 #
+# @executed	as the player & at current position
+#
 # @within	sheepwars:right_click/all
 #
-# @executed			as & at the player
-# 
 # @description		Summons a sheep with tag "glouton" and launches it in the direction the player is looking at.
 #
 

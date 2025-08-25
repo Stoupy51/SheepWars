@@ -1,10 +1,10 @@
 
 #> sheepwars:sheeps/final/fire_explosion
 #
+# @executed	as @e[type=sheep,tag=sheepwars.sheep] & at @s
+#
 # @within	sheepwars:sheeps/final_action
 #
-# @executed			as & at the sheep
-# 
 # @description		Explode the sheep with an explosion that creates fire
 #
 

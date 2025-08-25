@@ -1,12 +1,12 @@
 
 #> sheepwars:utils/get_player_from_uuid
 #
-# @within	sheepwars:sheeps/final/fire_explosion
-#			sheepwars:sheeps/final/fragmentation
-#			sheepwars:sheeps/final/normal_explosion
+# @executed	as @a
 #
-# @executed			as a player
-# 
+# @within	sheepwars:sheeps/final/fire_explosion [ as @a ]
+#			sheepwars:sheeps/final/fragmentation [ as @a ]
+#			sheepwars:sheeps/final/normal_explosion [ as @a ]
+#
 # @input storage	sheepwars:main UUID : The player UUID that launched the sheep.
 # @output player	Tagged player that launched the sheep.
 # 

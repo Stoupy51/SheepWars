@@ -1,10 +1,10 @@
 
 #> sheepwars:utils/get_marker_motion
 #
-# @within	sheepwars:utils/launch_entity_in_direction
+# @executed	at @s & at @s
 #
-# @executed			as & at a non-player entity (sheep, etc.)
-# 
+# @within	sheepwars:utils/launch_entity_in_direction [ at @s & at @s ]
+#
 # @input storage	sheepwars:main Rotation : 2D rotation of the entity
 # @output storage	sheepwars:main Motion : 3D motion of the entity (Position of the marker)
 # 

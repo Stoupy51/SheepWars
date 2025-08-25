@@ -1,10 +1,10 @@
 
 #> sheepwars:sheeps/blink
 #
+# @executed	as @e[type=sheep,tag=sheepwars.sheep] & at @s
+#
 # @within	sheepwars:sheeps/tick_sheep
 #
-# @executed			as & at the sheep (that can explode)
-# 
 # @description		Score sheepwars.data is supposed to be at least 90 (ticks).
 #
 

@@ -1,21 +1,21 @@
 
 #> sheepwars:utils/launch_entity_in_direction
 #
-# @within	sheepwars:sheeps/summon/abordage
-#			sheepwars:sheeps/summon/chercheur
-#			sheepwars:sheeps/summon/distorsion
-#			sheepwars:sheeps/summon/explosif
-#			sheepwars:sheeps/summon/foudroyant
-#			sheepwars:sheeps/summon/fragmentation
-#			sheepwars:sheeps/summon/glace
-#			sheepwars:sheeps/summon/glouton
-#			sheepwars:sheeps/summon/incendiaire
-#			sheepwars:sheeps/summon/intergalactique
-#			sheepwars:sheeps/summon/sismique
-#			sheepwars:sheeps/summon/tenebreux
+# @executed	as @e[tag=sheepwars.new] & at @s
 #
-# @executed			as & at a non-player entity (sheep, etc.)
-# 
+# @within	sheepwars:sheeps/summon/abordage [ as @e[tag=sheepwars.new] & at @s ]
+#			sheepwars:sheeps/summon/chercheur [ as @e[tag=sheepwars.new] & at @s ]
+#			sheepwars:sheeps/summon/distorsion [ as @e[tag=sheepwars.new] & at @s ]
+#			sheepwars:sheeps/summon/explosif [ as @e[tag=sheepwars.new] & at @s ]
+#			sheepwars:sheeps/summon/foudroyant [ as @e[tag=sheepwars.new] & at @s ]
+#			sheepwars:sheeps/summon/fragmentation [ as @e[tag=sheepwars.new] & at @s ]
+#			sheepwars:sheeps/summon/glace [ as @e[tag=sheepwars.new] & at @s ]
+#			sheepwars:sheeps/summon/glouton [ as @e[tag=sheepwars.new] & at @s ]
+#			sheepwars:sheeps/summon/incendiaire [ as @e[tag=sheepwars.new] & at @s ]
+#			sheepwars:sheeps/summon/intergalactique [ as @e[tag=sheepwars.new] & at @s ]
+#			sheepwars:sheeps/summon/sismique [ as @e[tag=sheepwars.new] & at @s ]
+#			sheepwars:sheeps/summon/tenebreux [ as @e[tag=sheepwars.new] & at @s ]
+#
 # @input storage	sheepwars:main Rotation : 2D rotation of the entity
 # @input storage	sheepwars:main UUID : UUID of the player who launched the entity
 # 

@@ -1,7 +1,9 @@
 
 #> sheepwars:sheeps/final/remove_levitation
 #
-# @within	sheepwars:v2.3.3/tick
+# @executed	at @s
+#
+# @within	sheepwars:v2.3.3/tick [ at @s ]
 #
 
 # Remove levitation effect
