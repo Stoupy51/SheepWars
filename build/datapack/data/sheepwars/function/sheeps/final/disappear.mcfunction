@@ -5,7 +5,7 @@
 #
 # @within	sheepwars:sheeps/active/intergalactique/marker_tick [ at @s ]
 #			sheepwars:sheeps/final_action
-#			sheepwars:v2.3.4/tick [ as @e[type=husk,tag=sheepwars.chercheur_rider,predicate=!sheepwars:has_vehicle] ]
+#			sheepwars:v2.4.0/tick [ as @e[type=husk,tag=sheepwars.chercheur_rider,predicate=!sheepwars:has_vehicle] ]
 #
 # @description		Remove the sheep from the game.
 #

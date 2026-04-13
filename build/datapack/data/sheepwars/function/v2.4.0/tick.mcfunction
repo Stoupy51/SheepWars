@@ -1,8 +1,11 @@
 
-#> sheepwars:v2.3.4/tick
+#> sheepwars:v2.4.0/tick
 #
-# @within	sheepwars:v2.3.4/load/tick_verification
+# @within	sheepwars:v2.4.0/load/tick_verification
 #
+
+# Global tick
+scoreboard players add #global_tick sheepwars.data 1
 
 # Make disappear vehicle less "chercheur_rider"
 execute as @e[type=husk,tag=sheepwars.chercheur_rider,predicate=!sheepwars:has_vehicle] run function sheepwars:sheeps/final/disappear

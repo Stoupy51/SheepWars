@@ -3,7 +3,7 @@
 #
 # @executed	as @e[type=sheep,tag=sheepwars.sheep] & at @s
 #
-# @within	sheepwars:v2.3.4/tick [ as @e[type=sheep,tag=sheepwars.sheep] & at @s ]
+# @within	sheepwars:v2.4.0/tick [ as @e[type=sheep,tag=sheepwars.sheep] & at @s ]
 #
 # @description		Manages the sheep actions
 #

@@ -10,11 +10,9 @@ def beet_default(ctx: Context) -> None:
 	# Add scoreboard objectives
 	write_load_file(f"""
 ## Scoreboards
-# Delete all scoreboards
-scoreboard objectives remove {ns}.data
-
 # Data scoreboard for math and stuff
 scoreboard objectives add {ns}.data dummy
+scoreboard objectives add {ns}.cooldown dummy
 
 # Previous color reminder
 scoreboard objectives add {ns}.previous_color dummy
@@ -29,6 +27,9 @@ team modify {ns}.sheeps collisionRule never
 
 	# Write tick
 	write_tick_file(f"""
+# Global tick
+scoreboard players add #global_tick {ns}.data 1
+
 # Make disappear vehicle less "chercheur_rider"
 execute as @e[type=husk,tag={ns}.chercheur_rider,predicate=!{ns}:has_vehicle] run function {ns}:sheeps/final/disappear
 

@@ -6,9 +6,9 @@ name: "SheepWars"
 # Author(s) name(s) displayed in pack.mcmeta, also used to add 'convention.debug' tag to the players of the same name(s) <-- showing additionnal displays like datapack loading
 author: "Stoupy51"
 # Project version in semantic versioning format: major.minor.patch (e.g., 1.0.0 or 2.84.615).
-version: "2.3.4"
+version: "2.4.0"
 # Minecraft version. Determines what resources beet loads (plugins like `mecha` determine what commands to use). Defaults: Latest
-minecraft: "1.21.8"
+minecraft: "1.21.11"
 
 # Defines the directory that beet uses for the base path
 directory: "."
@@ -24,7 +24,6 @@ data_pack:
 pipeline:
     - "stewbeet.plugins.initialize"
     - "user.setup_database" # User code
-    - "stewbeet.plugins.verify_definitions"
     - "stewbeet.plugins.custom_recipes"
     - "stewbeet.plugins.datapack.loading"
     - "stewbeet.plugins.datapack.loot_tables"
@@ -40,6 +39,8 @@ pipeline:
 
 # Generic dict which holds extra information usable by plugins
 meta:
+    # List of supported Minecraft versions (used when uploading to Modrinth or Smithed)
+    mc_supports: ["1.21.11", "26.1", "26.1.1", "26.1.2", "infinite"]
 
     # StewBeet specific configuration
     stewbeet:
@@ -50,7 +51,7 @@ meta:
         # Optional list of destination paths where generated files will be copied
         build_copy_destinations:
             # Paths to copy the datapack(s) to
-            datapack: ["D:/latest_snapshot/world/datapacks"]
+            datapack: ["D:/latest_snapshot/world/datapacks", "E:/my_folders/advanced_desktop/Switch/libs/datapack"]
             # Paths to copy the resource pack(s) to
             resource_pack: ["D:/minecraft/snapshot/resourcepacks"]
 
