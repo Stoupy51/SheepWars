@@ -11,7 +11,7 @@ advancement revoke @s only sheepwars:using_item
 
 # 4 ticks cooldown to prevent multiple summons when right-clicking fast
 execute if score @s sheepwars.cooldown > #global_tick sheepwars.data run return fail
-scoreboard players operate @s sheepwars.cooldown = #global_tick sheepwars.data
+scoreboard players operation @s sheepwars.cooldown = #global_tick sheepwars.data
 scoreboard players add @s sheepwars.cooldown 4
 
 # Copy the player's UUID to the main storage
