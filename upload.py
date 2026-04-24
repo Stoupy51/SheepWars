@@ -43,3 +43,10 @@ smithed_config: JsonDict = {
 }
 upload_to_smithed(credentials, smithed_config, changelog)
 
+# Upload to PlanetMinecraft
+pmc_config: JsonDict = {
+	"project_url": "https://www.planetminecraft.com/account/manage/data-packs/6915246/",
+	"version": cfg.version,
+}
+upload_to_pmc(pmc_config, changelog)
+
