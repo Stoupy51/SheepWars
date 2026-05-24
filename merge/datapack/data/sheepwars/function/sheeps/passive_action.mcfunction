@@ -7,6 +7,9 @@
 #
 
 ## Apply the sheep passive action
+# Abordage
+execute if entity @s[tag=sheepwars.abordage] on passengers run effect give @s slow_falling 1 0 true
+
 # Tenebreux
 execute if entity @s[tag=sheepwars.tenebreux] run effect give @a[gamemode=!spectator,distance=..6] darkness 1 0 true
 execute if entity @s[tag=sheepwars.tenebreux] run particle dust{color:[0,0,0],scale:1} ~ ~ ~ 6 6 6 0 10
