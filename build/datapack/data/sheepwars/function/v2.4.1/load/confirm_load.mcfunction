@@ -1,13 +1,13 @@
 
-#> sheepwars:v2.4.0/load/confirm_load
+#> sheepwars:v2.4.1/load/confirm_load
 #
-# @within	sheepwars:v2.4.0/load/valid_dependencies
+# @within	sheepwars:v2.4.1/load/valid_dependencies
 #
 
 # Confirm load
-tellraw @a[tag=convention.debug] {"text":"[Loaded SheepWars v2.4.0]","color":"green"}
+tellraw @a[tag=convention.debug] {"text":"[Loaded SheepWars v2.4.1]","color":"green"}
 scoreboard players set #sheepwars.loaded load.status 1
-function sheepwars:v2.4.0/load/set_items_storage
+function sheepwars:v2.4.1/load/set_items_storage
 
 ## Scoreboards
 # Data scoreboard for math and stuff

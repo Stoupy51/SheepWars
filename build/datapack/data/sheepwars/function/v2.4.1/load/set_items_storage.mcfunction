@@ -1,7 +1,7 @@
 
-#> sheepwars:v2.4.0/load/set_items_storage
+#> sheepwars:v2.4.1/load/set_items_storage
 #
-# @within	sheepwars:v2.4.0/load/confirm_load
+# @within	sheepwars:v2.4.1/load/confirm_load
 #
 
 # Items storage
