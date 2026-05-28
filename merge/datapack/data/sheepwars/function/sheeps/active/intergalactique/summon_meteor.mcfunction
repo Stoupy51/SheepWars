@@ -41,7 +41,7 @@ execute store result entity @s Pos[1] double 1 run scoreboard players get #y she
 execute store result entity @s Pos[2] double 1 run scoreboard players get #z sheepwars.data
 
 # Rotation to look at the sheep
-execute at @s run tp @s ~ ~ ~ facing entity @e[type=sheep,tag=sheepwars.aim_for_meteor,limit=1,sort=nearest] feet
+execute at @s run tp @s ~ ~ ~ facing entity @n[type=sheep,tag=sheepwars.aim_for_meteor] feet
 
 # Teleport the marker a bit offset
 execute at @s run tp @s ~-16 ~ ~-8
