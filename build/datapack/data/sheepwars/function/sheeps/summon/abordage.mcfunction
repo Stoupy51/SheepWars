@@ -19,7 +19,7 @@ execute as @e[tag=sheepwars.new] at @s run function sheepwars:utils/launch_entit
 
 # Ride the sheep and remove the "to_ride" tag
 ride @s dismount
-ride @s mount @e[tag=sheepwars.to_ride,limit=1]
+ride @s mount @n[tag=sheepwars.to_ride]
 tag @e[tag=sheepwars.to_ride] remove sheepwars.to_ride
 
 # Success

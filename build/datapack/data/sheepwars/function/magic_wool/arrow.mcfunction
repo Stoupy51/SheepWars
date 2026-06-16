@@ -1,9 +1,9 @@
 
 #> sheepwars:magic_wool/arrow
 #
-# @executed	as @e[type=arrow,nbt={inBlockState:{}},distance=..1.69,limit=1]
+# @executed	as @n[type=arrow,nbt={inBlockState:{}},distance=..1.69]
 #
-# @within	sheepwars:magic_wool/tick [ as @e[type=arrow,nbt={inBlockState:{}},distance=..1.69,limit=1] ]
+# @within	sheepwars:magic_wool/tick [ as @n[type=arrow,nbt={inBlockState:{}},distance=..1.69] ]
 #
 # @description		Launches a signal (function tag) on the arrow owner (origin) and kill the arrow
 #
