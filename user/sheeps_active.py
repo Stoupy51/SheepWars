@@ -29,7 +29,6 @@ execute positioned ~ ~ ~-2 run function {ns}:sheeps/active/glace/2nd_dimension
 execute positioned ~ ~ ~-3 run function {ns}:sheeps/active/glace/2nd_dimension
 execute positioned ~ ~ ~-4 run function {ns}:sheeps/active/glace/2nd_dimension
 execute positioned ~ ~ ~-5 run function {ns}:sheeps/active/glace/2nd_dimension
-
 """)
 
 	write_function(f"{ns}:sheeps/active/glace/2nd_dimension", f"""
@@ -52,7 +51,6 @@ execute positioned ~ ~-2 ~ run function {ns}:sheeps/active/glace/3rd_dimension
 execute positioned ~ ~-3 ~ run function {ns}:sheeps/active/glace/3rd_dimension
 execute positioned ~ ~-4 ~ run function {ns}:sheeps/active/glace/3rd_dimension
 execute positioned ~ ~-5 ~ run function {ns}:sheeps/active/glace/3rd_dimension
-
 """)
 
 	write_function(f"{ns}:sheeps/active/glace/3rd_dimension", f"""
@@ -74,7 +72,6 @@ execute if block ~ ~ ~ snow[layers=1] run setblock ~ ~ ~ snow[layers=2] replace
 
 # If block is air and placeable, place a snow layer
 execute if block ~ ~ ~ #{ns}:non_solid unless block ~ ~-1 ~ #{ns}:unplaceable_snow_on unless block ~ ~ ~ snow run setblock ~ ~ ~ snow[layers=1] replace
-
 """)
 
 	write_function(f"{ns}:sheeps/active/glace/main", f"""
@@ -97,7 +94,6 @@ execute positioned ~-2 ~ ~ run function {ns}:sheeps/active/glace/1st_dimension
 execute positioned ~-3 ~ ~ run function {ns}:sheeps/active/glace/1st_dimension
 execute positioned ~-4 ~ ~ run function {ns}:sheeps/active/glace/1st_dimension
 execute positioned ~-5 ~ ~ run function {ns}:sheeps/active/glace/1st_dimension
-
 """)
 
 	write_function(f"{ns}:sheeps/active/intergalactique/main", f"""
@@ -122,7 +118,6 @@ execute summon marker run function {ns}:sheeps/active/intergalactique/summon_met
 
 # Remove the temporary tag
 tag @s remove {ns}.aim_for_meteor
-
 """)
 
 	write_function(f"{ns}:sheeps/active/intergalactique/marker_tick", f"""
@@ -145,7 +140,6 @@ scoreboard players set #is_air {ns}.data 0
 execute at @s if block ~ ~ ~ air run scoreboard players set #is_air {ns}.data 1
 execute at @s if score #is_air {ns}.data matches 0 run function {ns}:sheeps/final/normal_explosion
 execute at @s if score #is_air {ns}.data matches 0 run function {ns}:sheeps/final/disappear
-
 
 """)
 
@@ -205,6 +199,5 @@ execute if predicate {ns}:random/0.5 at @s run tp @s ~ ~ ~1
 execute if predicate {ns}:random/0.5 at @s run tp @s ~ ~ ~2
 execute if predicate {ns}:random/0.5 at @s run tp @s ~ ~ ~4
 execute if predicate {ns}:random/0.5 at @s run tp @s ~ ~ ~8
-
 """)
 

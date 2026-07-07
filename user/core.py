@@ -30,7 +30,6 @@ data remove storage {ns}:items all
 #define storage {ns}:main
 #define storage {ns}:items
 
-
 """)
 
 	write_function(f"{ns}:right_click/all", f"""
@@ -64,6 +63,5 @@ execute if score #success {ns}.data matches 0 if data entity @s SelectedItem.com
 # If success is 1, then remove one count of the item in the player's hand
 execute if score #success {ns}.data matches 1 run item modify entity @s weapon.mainhand {ns}:remove_one
 execute if score #success {ns}.data matches 1 run scoreboard players add @s {ns}.launched_count 1
-
 """)
 

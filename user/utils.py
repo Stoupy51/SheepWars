@@ -31,7 +31,6 @@ data modify storage {ns}:main Motion set from entity @s Pos
 
 # Kill the entity
 kill @s
-
 """)
 
 	write_function(f"{ns}:utils/get_player_from_uuid", f"""
@@ -54,7 +53,6 @@ execute store success score #replaced {ns}.data run data modify storage {ns}:mai
 
 # If the player UUID matches (not replaced), add a tag to the player
 execute if score #replaced {ns}.data matches 0 run tag @s add {ns}.owner
-
 
 """)
 
@@ -80,7 +78,6 @@ execute at @s positioned 0 0 0 summon marker at @s run function {ns}:utils/get_m
 execute store result entity @s Motion[0] double 0.04 run data get storage {ns}:main Motion[0]
 execute store result entity @s Motion[1] double 0.04 run data get storage {ns}:main Motion[1]
 execute store result entity @s Motion[2] double 0.04 run data get storage {ns}:main Motion[2]
-
 """)
 
 	write_function(f"{ns}:utils/new_sheep", f"""
@@ -112,7 +109,6 @@ effect give @s fire_resistance infinite 0 true
 
 # Remove fall damage
 attribute @s safe_fall_distance base set 1024
-
 """)
 
 	write_function(f"{ns}:utils/player_damaged", f"""
@@ -134,7 +130,6 @@ execute if score #health {ns}.data matches ..0 run function #{ns}:signals/player
 
 # Remove the damage tag
 tag @s remove {ns}.damaged
-
 """)
 
 	write_function(f"{ns}:utils/random_give", f"""
@@ -204,6 +199,5 @@ setblock 0 0 0 air
 
 # Reset input score
 scoreboard players reset #number_of_drops {ns}.data
-
 """)
 

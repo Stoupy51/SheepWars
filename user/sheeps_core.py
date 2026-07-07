@@ -51,7 +51,6 @@ execute if score @s {ns}.data matches 187 run data modify entity @s Color set va
 execute if score @s {ns}.data matches 189 store result entity @s Color byte 1 run scoreboard players get @s {ns}.previous_color
 
 # Do nothing at 190 ticks in this function
-
 """)
 
 	write_function(f"{ns}:sheeps/final_action", f"""
@@ -73,7 +72,6 @@ execute store success score #success {ns}.data if score #success {ns}.data match
 
 # In all cases, remove the sheep
 function {ns}:sheeps/final/disappear
-
 """)
 
 	write_function(f"{ns}:sheeps/give_levitation", f"""
@@ -82,7 +80,6 @@ effect give @s levitation 1 8 true
 
 # Add the launched tag
 tag @s add {ns}.launched_in_air
-
 """)
 
 	write_function(f"{ns}:sheeps/passive_action", f"""
@@ -153,7 +150,6 @@ execute if entity @s[tag={ns}.intergalactique,scores={{{ns}.data=90}}] run funct
 execute if entity @s[tag={ns}.intergalactique,scores={{{ns}.data=110}}] run function {ns}:sheeps/active/intergalactique/main
 execute if entity @s[tag={ns}.intergalactique,scores={{{ns}.data=130}}] run function {ns}:sheeps/active/intergalactique/main
 
-
 """)
 
 	write_function(f"{ns}:sheeps/tick_sheep", f"""
@@ -178,6 +174,5 @@ execute if score @s {ns}.data matches 20.. if entity @s[tag={ns}.fragmentation_p
 
 # Final action of the sheep (Explosion, fire, disappear, etc.)
 execute if score @s {ns}.data matches 190.. run function {ns}:sheeps/final_action
-
 """)
 

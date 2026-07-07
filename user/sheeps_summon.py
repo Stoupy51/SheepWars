@@ -33,7 +33,6 @@ tag @e[tag={ns}.to_ride] remove {ns}.to_ride
 
 # Success
 scoreboard players set #success {ns}.data 1
-
 """)
 
 	write_function(f"{ns}:sheeps/summon/chercheur", f"""
@@ -55,7 +54,6 @@ execute as @e[tag={ns}.new] at @s run function {ns}:utils/launch_entity_in_direc
 
 # Success
 scoreboard players set #success {ns}.data 1
-
 """)
 
 	write_function(f"{ns}:sheeps/summon/distorsion", f"""
@@ -77,7 +75,6 @@ execute as @e[tag={ns}.new] at @s run function {ns}:utils/launch_entity_in_direc
 
 # Success
 scoreboard players set #success {ns}.data 1
-
 """)
 
 	write_function(f"{ns}:sheeps/summon/explosif", f"""
@@ -99,7 +96,6 @@ execute as @e[tag={ns}.new] at @s run function {ns}:utils/launch_entity_in_direc
 
 # Success
 scoreboard players set #success {ns}.data 1
-
 """)
 
 	write_function(f"{ns}:sheeps/summon/foudroyant", f"""
@@ -121,7 +117,6 @@ execute as @e[tag={ns}.new] at @s run function {ns}:utils/launch_entity_in_direc
 
 # Success
 scoreboard players set #success {ns}.data 1
-
 """)
 
 	write_function(f"{ns}:sheeps/summon/fragmentation", f"""
@@ -143,7 +138,6 @@ execute as @e[tag={ns}.new] at @s run function {ns}:utils/launch_entity_in_direc
 
 # Success
 scoreboard players set #success {ns}.data 1
-
 """)
 
 	write_function(f"{ns}:sheeps/summon/glace", f"""
@@ -165,7 +159,6 @@ execute as @e[tag={ns}.new] at @s run function {ns}:utils/launch_entity_in_direc
 
 # Success
 scoreboard players set #success {ns}.data 1
-
 """)
 
 	write_function(f"{ns}:sheeps/summon/glouton", f"""
@@ -187,7 +180,6 @@ execute as @e[tag={ns}.new] at @s run function {ns}:utils/launch_entity_in_direc
 
 # Success
 scoreboard players set #success {ns}.data 1
-
 """)
 
 	write_function(f"{ns}:sheeps/summon/incendiaire", f"""
@@ -209,7 +201,6 @@ execute as @e[tag={ns}.new] at @s run function {ns}:utils/launch_entity_in_direc
 
 # Success
 scoreboard players set #success {ns}.data 1
-
 """)
 
 	write_function(f"{ns}:sheeps/summon/intergalactique", f"""
@@ -231,7 +222,6 @@ execute as @e[tag={ns}.new] at @s run function {ns}:utils/launch_entity_in_direc
 
 # Success
 scoreboard players set #success {ns}.data 1
-
 """)
 
 	write_function(f"{ns}:sheeps/summon/sismique", f"""
@@ -253,7 +243,6 @@ execute as @e[tag={ns}.new] at @s run function {ns}:utils/launch_entity_in_direc
 
 # Success
 scoreboard players set #success {ns}.data 1
-
 """)
 
 	write_function(f"{ns}:sheeps/summon/soutien", f"""
@@ -275,7 +264,6 @@ execute as @e[tag={ns}.new] at @s run function {ns}:utils/new_sheep
 
 # Success
 scoreboard players set #success {ns}.data 1
-
 """)
 
 	write_function(f"{ns}:sheeps/summon/tenebreux", f"""
@@ -297,6 +285,5 @@ execute as @e[tag={ns}.new] at @s run function {ns}:utils/launch_entity_in_direc
 
 # Success
 scoreboard players set #success {ns}.data 1
-
 """)
 

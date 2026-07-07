@@ -23,7 +23,6 @@ execute on passengers run ride @s[type=player] dismount
 # Remove the sheep
 tp @s 0 -10000 0
 kill @s
-
 """)
 
 	write_function(f"{ns}:sheeps/final/fire_explosion", f"""
@@ -86,7 +85,6 @@ scoreboard players reset #falling_fire realistic_explosion.data
 # Remove the tag from the owner
 tag @a[tag={ns}.owner] remove {ns}.owner
 
-
 """)
 
 	write_function(f"{ns}:sheeps/final/fragmentation", f"""
@@ -147,7 +145,6 @@ execute as @e[type=sheep,tag={ns}.new] run function {ns}:utils/new_sheep
 # Remove the tag from the owner
 tag @a[tag={ns}.owner] remove {ns}.owner
 
-
 """)
 
 	write_function(f"{ns}:sheeps/final/normal_explosion", f"""
@@ -202,7 +199,6 @@ function realistic_explosion:explode
 
 # Remove the tag from the owner
 tag @a[tag={ns}.owner] remove {ns}.owner
-
 
 """)
 

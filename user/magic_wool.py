@@ -23,7 +23,6 @@ execute on origin run function #{ns}:signals/magic_wool_shot
 # Kill the arrow
 scoreboard players set #success {ns}.data 1
 kill @s
-
 """)
 
 	write_function(f"{ns}:magic_wool/summon", f"""
@@ -40,7 +39,6 @@ kill @s
 
 # Summon a marker
 execute summon marker run function {ns}:magic_wool/summon_on_marker
-
 """)
 
 	write_function(f"{ns}:magic_wool/summon_on_marker", f"""
@@ -87,7 +85,6 @@ execute store result entity @s Pos[2] double 1 run scoreboard players get #z {ns
 # Place the colored wool and a tag to the marker
 execute at @s run setblock ~ ~ ~ white_wool
 tag @s add {ns}.magic_wool
-
 """)
 
 	write_function(f"{ns}:magic_wool/tick", f"""
@@ -126,6 +123,5 @@ scoreboard players set #success {ns}.data 0
 execute as @n[type=arrow,nbt={{inBlockState:{{}}}},distance=..1.69] run function {ns}:magic_wool/arrow
 execute if score #success {ns}.data matches 1 run setblock ~ ~ ~ air
 execute if score #success {ns}.data matches 1 run kill @s
-
 """)
 
