@@ -2,10 +2,31 @@
 # Imports
 from stewbeet import Context, write_function, write_load_file, write_tick_file
 
+from user.core import setup_core_functions
+from user.magic_wool import setup_magic_wool_functions
+from user.resources import setup_resources
+from user.sheeps_active import setup_sheeps_active_functions
+from user.sheeps_core import setup_sheeps_core_functions
+from user.sheeps_final import setup_sheeps_final_functions
+from user.sheeps_summon import setup_sheeps_summon_functions
+from user.utils import setup_utils_functions
+
 
 # Main function is run just before making finalyzing the build process (zip, headers, lang, ...)
 def beet_default(ctx: Context) -> None:
 	ns: str = ctx.project_id
+
+	# Setup all functions (right click handling, unload, magic wools, sheeps behaviors, utils)
+	setup_core_functions(ctx)
+	setup_magic_wool_functions(ctx)
+	setup_sheeps_core_functions(ctx)
+	setup_sheeps_active_functions(ctx)
+	setup_sheeps_final_functions(ctx)
+	setup_sheeps_summon_functions(ctx)
+	setup_utils_functions(ctx)
+
+	# Setup json resources (advancement, loot tables, item modifier, predicates, tags)
+	setup_resources(ctx)
 
 	# Add scoreboard objectives
 	write_load_file(f"""
@@ -54,6 +75,4 @@ effect clear @s levitation
 # Remove tag
 tag @s remove {ns}.launched_in_air
 """)
-
-	pass
 

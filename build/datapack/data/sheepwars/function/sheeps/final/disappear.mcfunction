@@ -1,10 +1,10 @@
 
 #> sheepwars:sheeps/final/disappear
 #
-# @executed	at @s
+# @executed	as @e[type=sheep,tag=sheepwars.sheep] & at @s
 #
-# @within	sheepwars:sheeps/active/intergalactique/marker_tick [ at @s ]
-#			sheepwars:sheeps/final_action
+# @within	sheepwars:sheeps/final_action
+#			sheepwars:sheeps/active/intergalactique/marker_tick [ at @s ]
 #			sheepwars:v2.4.1/tick [ as @e[type=husk,tag=sheepwars.chercheur_rider,predicate=!sheepwars:has_vehicle] ]
 #
 # @description		Remove the sheep from the game.
