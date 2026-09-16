@@ -9,7 +9,8 @@
 #
 
 # Get player UUID
-data modify storage sheepwars:main UUID set from entity @s ArmorItems[0].components."minecraft:custom_data".UUID
+data remove storage sheepwars:main UUID
+data modify storage sheepwars:main UUID set from entity @s equipment.feet.components."minecraft:custom_data".UUID
 
 # Add a temporary tag for markers to rotate on the sheep
 tag @s add sheepwars.aim_for_meteor

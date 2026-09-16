@@ -13,6 +13,9 @@
 # @description		Compare the player UUID with the one stored in the sheepwars:main storage.
 #
 
+# Without a UUID to compare against, the sheep has no known owner
+execute unless data storage sheepwars:main UUID run return 0
+
 # Copy the player UUID
 data modify storage sheepwars:main Copy set from storage sheepwars:main UUID
 

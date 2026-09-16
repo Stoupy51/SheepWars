@@ -1,5 +1,4 @@
 
-# ruff: noqa: E501
 # Imports
 from beet import Context
 from stewbeet import write_function
@@ -8,6 +7,32 @@ from stewbeet import write_function
 # Setup magic wool functions
 def setup_magic_wool_functions(ctx: Context) -> None:
 	ns: str = ctx.project_id
+
+	# Dust colour of each wool the block cycles through, one every 20 ticks
+	WOOL_COLORS: dict[str, tuple[float, float, float]] = {
+		"white":      (1.00, 1.00, 1.00),
+		"orange":     (0.85, 0.50, 0.20),
+		"magenta":    (0.75, 0.30, 0.70),
+		"light_blue": (0.30, 0.60, 0.85),
+		"yellow":     (0.90, 0.80, 0.20),
+		"lime":       (0.45, 0.75, 0.20),
+		"pink":       (0.90, 0.55, 0.65),
+		"gray":       (0.30, 0.30, 0.30),
+		"light_gray": (0.60, 0.60, 0.60),
+		"cyan":       (0.15, 0.50, 0.55),
+		"purple":     (0.50, 0.20, 0.70),
+		"blue":       (0.20, 0.25, 0.60),
+		"brown":      (0.40, 0.25, 0.15),
+		"green":      (0.35, 0.45, 0.15),
+		"red":        (0.60, 0.20, 0.20),
+		"black":      (0.10, 0.10, 0.10),
+	}
+	""" Colours out of the 0 to 1 range are clamped, so the rainbow follows the wool instead. """
+	colored_particles: str = "\n".join(
+		f"execute if score @s {ns}.data matches {index * 20 + 1}..{index * 20 + 20} run return run particle dust{{color:[{red},{green},{blue}],scale:1}} ~.5 ~.5 ~.5 .5 .5 .5 0 10 force"
+		for index, (red, green, blue) in enumerate(WOOL_COLORS.values())
+	)
+	write_function(f"{ns}:magic_wool/particles", colored_particles)
 
 	write_function(f"{ns}:magic_wool/arrow", f"""
 #> {ns}:magic_wool/arrow
@@ -96,7 +121,7 @@ tag @s add {ns}.magic_wool
 #
 
 # Particles
-particle dust{{color:[255,255,255],scale:1}} ~.5 ~.5 ~.5 .5 .5 .5 0 10 force
+function {ns}:magic_wool/particles
 
 # Update the colored wool every second
 scoreboard players add @s {ns}.data 1
@@ -120,7 +145,8 @@ execute if score @s {ns}.data matches 320 run scoreboard players set @s {ns}.dat
 
 # If there is an arrow on the colored wool, remove the wool and launch a signal
 scoreboard players set #success {ns}.data 0
-execute as @n[type=arrow,nbt={{inBlockState:{{}}}},distance=..1.69] run function {ns}:magic_wool/arrow
+# A stuck arrow stores the block it hit, written as a plain id string whenever that block has no properties
+execute as @e[type=arrow,distance=..1.69,sort=nearest] if score #success {ns}.data matches 0 if data entity @s inBlockState run function {ns}:magic_wool/arrow
 execute if score #success {ns}.data matches 1 run setblock ~ ~ ~ air
 execute if score #success {ns}.data matches 1 run kill @s
 """)

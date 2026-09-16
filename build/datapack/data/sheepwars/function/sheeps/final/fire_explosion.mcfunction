@@ -14,7 +14,8 @@ playsound entity.generic.explode block @a[distance=..42] ~ ~ ~ 1 1 0.3
 
 ## Tag the player that launched the sheep
 # Get player UUID
-data modify storage sheepwars:main UUID set from entity @s ArmorItems[0].components."minecraft:custom_data".UUID
+data remove storage sheepwars:main UUID
+data modify storage sheepwars:main UUID set from entity @s equipment.feet.components."minecraft:custom_data".UUID
 # Search for the player with this UUID
 execute as @a run function sheepwars:utils/get_player_from_uuid
 

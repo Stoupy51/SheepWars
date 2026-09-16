@@ -39,7 +39,8 @@ playsound entity.generic.explode block @a[distance=..42] ~ ~ ~ 1 1 0.3
 
 ## Tag the player that launched the sheep
 # Get player UUID
-data modify storage {ns}:main UUID set from entity @s ArmorItems[0].components."minecraft:custom_data".UUID
+data remove storage {ns}:main UUID
+data modify storage {ns}:main UUID set from entity @s equipment.feet.components."minecraft:custom_data".UUID
 # Search for the player with this UUID
 execute as @a run function {ns}:utils/get_player_from_uuid
 
@@ -101,7 +102,8 @@ playsound entity.generic.explode block @a[distance=..42] ~ ~ ~ 1 1 0.3
 
 ## Tag the player that launched the sheep
 # Get player UUID
-data modify storage {ns}:main UUID set from entity @s ArmorItems[0].components."minecraft:custom_data".UUID
+data remove storage {ns}:main UUID
+data modify storage {ns}:main UUID set from entity @s equipment.feet.components."minecraft:custom_data".UUID
 # Search for the player with this UUID
 execute as @a run function {ns}:utils/get_player_from_uuid
 
@@ -161,7 +163,8 @@ playsound entity.generic.explode block @a[distance=..42] ~ ~ ~ 1 1 0.3
 
 ## Tag the player that launched the sheep
 # Get player UUID
-data modify storage {ns}:main UUID set from entity @s[type=sheep] ArmorItems[0].components."minecraft:custom_data".UUID
+data remove storage {ns}:main UUID
+data modify storage {ns}:main UUID set from entity @s[type=sheep] equipment.feet.components."minecraft:custom_data".UUID
 data modify storage {ns}:main UUID set from entity @s[type=marker] data.UUID
 # Search for the player with this UUID
 execute as @a run function {ns}:utils/get_player_from_uuid

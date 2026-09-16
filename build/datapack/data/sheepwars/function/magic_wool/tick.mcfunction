@@ -9,7 +9,7 @@
 #
 
 # Particles
-particle dust{color:[255,255,255],scale:1} ~.5 ~.5 ~.5 .5 .5 .5 0 10 force
+function sheepwars:magic_wool/particles
 
 # Update the colored wool every second
 scoreboard players add @s sheepwars.data 1
@@ -33,7 +33,8 @@ execute if score @s sheepwars.data matches 320 run scoreboard players set @s she
 
 # If there is an arrow on the colored wool, remove the wool and launch a signal
 scoreboard players set #success sheepwars.data 0
-execute as @n[type=arrow,nbt={inBlockState:{}},distance=..1.69] run function sheepwars:magic_wool/arrow
+# A stuck arrow stores the block it hit, written as a plain id string whenever that block has no properties
+execute as @e[type=arrow,distance=..1.69,sort=nearest] if score #success sheepwars.data matches 0 if data entity @s inBlockState run function sheepwars:magic_wool/arrow
 execute if score #success sheepwars.data matches 1 run setblock ~ ~ ~ air
 execute if score #success sheepwars.data matches 1 run kill @s
 

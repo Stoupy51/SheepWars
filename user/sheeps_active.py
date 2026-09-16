@@ -105,7 +105,8 @@ execute positioned ~-5 ~ ~ run function {ns}:sheeps/active/glace/1st_dimension
 #
 
 # Get player UUID
-data modify storage {ns}:main UUID set from entity @s ArmorItems[0].components."minecraft:custom_data".UUID
+data remove storage {ns}:main UUID
+data modify storage {ns}:main UUID set from entity @s equipment.feet.components."minecraft:custom_data".UUID
 
 # Add a temporary tag for markers to rotate on the sheep
 tag @s add {ns}.aim_for_meteor

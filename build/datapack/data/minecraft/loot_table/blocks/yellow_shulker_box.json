@@ -8,9 +8,9 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:yellow_shulker_box",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:copy_components",
+							"type": "minecraft:copy_components",
 							"source": "block_entity",
 							"include": [
 								"minecraft:custom_name",
@@ -22,21 +22,24 @@
 					]
 				}
 			],
-			"conditions": [
-				{
-					"condition": "minecraft:inverted",
-					"term": {
-						"condition": "minecraft:match_tool",
-						"predicate": {
-							"predicates": {
-								"minecraft:custom_data": {
-									"drop_contents": 1
+			"condition": {
+				"type": "minecraft:all_of",
+				"terms": [
+					{
+						"type": "minecraft:inverted",
+						"term": {
+							"type": "minecraft:match_tool",
+							"predicate": {
+								"predicates": {
+									"minecraft:custom_data": {
+										"drop_contents": true
+									}
 								}
 							}
 						}
 					}
-				}
-			]
+				]
+			}
 		},
 		{
 			"rolls": 1,
@@ -47,18 +50,16 @@
 					"name": "minecraft:contents"
 				}
 			],
-			"conditions": [
-				{
-					"condition": "minecraft:match_tool",
-					"predicate": {
-						"predicates": {
-							"minecraft:custom_data": {
-								"drop_contents": 1
-							}
+			"condition": {
+				"type": "minecraft:match_tool",
+				"predicate": {
+					"predicates": {
+						"minecraft:custom_data": {
+							"drop_contents": true
 						}
 					}
 				}
-			]
+			}
 		}
 	],
 	"random_sequence": "minecraft:blocks/yellow_shulker_box",
@@ -69,10 +70,10 @@
 		"rules": [
 			{
 				"type": "append",
-				"target": "pools[0].conditions",
+				"target": "pools[0].condition.terms",
 				"source": {
 					"type": "reference",
-					"path": "pools[0].conditions[0]"
+					"path": "pools[0].condition.terms[0]"
 				}
 			},
 			{

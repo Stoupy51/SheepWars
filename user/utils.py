@@ -44,6 +44,9 @@ kill @s
 # @description		Compare the player UUID with the one stored in the {ns}:main storage.
 #
 
+# Without a UUID to compare against, the sheep has no known owner
+execute unless data storage {ns}:main UUID run return 0
+
 # Copy the player UUID
 data modify storage {ns}:main Copy set from storage {ns}:main UUID
 
@@ -98,8 +101,8 @@ tag @s remove {ns}.new
 data modify entity @s Rotation set from storage {ns}:main Rotation
 
 # Store the launcher's UUID
-data merge entity @s {{ArmorItems:[{{id:"minecraft:stone",count:1}},{{}},{{}},{{}}],ArmorDropChances:[0.0f,0.0f,0.0f,0.0f]}}
-data modify entity @s ArmorItems[0].components."minecraft:custom_data".UUID set from storage {ns}:main UUID
+data merge entity @s {{equipment:{{feet:{{id:"minecraft:stone",count:1}}}},drop_chances:{{feet:0.0f}}}}
+data modify entity @s equipment.feet.components."minecraft:custom_data".UUID set from storage {ns}:main UUID
 
 # Join the {ns}.sheeps team (no collisions)
 team join {ns}.sheeps

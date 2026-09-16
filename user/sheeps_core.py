@@ -92,7 +92,8 @@ tag @s add {ns}.launched_in_air
 
 ## Apply the sheep passive action
 # Abordage
-execute if entity @s[tag={ns}.abordage] on passengers run effect give @s slow_falling 1 0 true
+execute if entity @s[tag={ns}.abordage] on passengers run effect give @s slow_falling 4 0 true
+execute if entity @s[tag={ns}.abordage] on passengers run data modify entity @s fall_distance set value 0d
 
 # Tenebreux
 execute if entity @s[tag={ns}.tenebreux] run effect give @a[gamemode=!spectator,distance=..6] darkness 1 0 true
