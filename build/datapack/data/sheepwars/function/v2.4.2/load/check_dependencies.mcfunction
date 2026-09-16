@@ -1,7 +1,7 @@
 
-#> sheepwars:v2.4.1/load/check_dependencies
+#> sheepwars:v2.4.2/load/check_dependencies
 #
-# @within	sheepwars:v2.4.1/load/secondary
+# @within	sheepwars:v2.4.2/load/secondary
 #
 
 ## Check if SheepWars is loadable (dependencies)

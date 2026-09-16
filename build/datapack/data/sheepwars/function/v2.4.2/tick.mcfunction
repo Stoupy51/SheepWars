@@ -1,7 +1,7 @@
 
-#> sheepwars:v2.4.1/tick
+#> sheepwars:v2.4.2/tick
 #
-# @within	sheepwars:v2.4.1/load/tick_verification
+# @within	sheepwars:v2.4.2/load/tick_verification
 #
 
 # Global tick

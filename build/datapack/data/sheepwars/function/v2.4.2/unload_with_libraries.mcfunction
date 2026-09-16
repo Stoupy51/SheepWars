@@ -1,5 +1,5 @@
 
-#> sheepwars:v2.4.1/unload_with_libraries
+#> sheepwars:v2.4.2/unload_with_libraries
 #
 # @within	#sheepwars:unload_with_libraries
 #
@@ -7,7 +7,7 @@
 #
 
 # Unload the pack itself
-function sheepwars:v2.4.1/unload
+function sheepwars:v2.4.2/unload
 
 # Unload libraries
 function #realistic_explosion:unload
