@@ -57,6 +57,9 @@ execute as @e[type=husk,tag={ns}.chercheur_rider,predicate=!{ns}:has_vehicle] ru
 # Remove levitation effect if no sheep is nearby and has been launched up
 execute as @a[tag={ns}.launched_in_air,nbt={{active_effects:[{{id:"minecraft:levitation"}}]}}] at @s unless entity @e[tag={ns}.sismique,distance=..6] run function {ns}:sheeps/final/remove_levitation
 
+# Give the fall damage back to abordage riders once they are down and off the sheep
+execute as @a[tag={ns}.abordage_rider,predicate=!{ns}:has_vehicle,predicate={ns}:is_on_ground] run function {ns}:sheeps/abordage_landed
+
 # Sheep management
 execute as @e[type=sheep,tag={ns}.sheep] at @s run function {ns}:sheeps/tick_sheep
 

@@ -29,6 +29,9 @@ def setup_resources(ctx: Context) -> None:
 	json_content = {"type":"minecraft:random_chance","chance":0.5}
 	ctx.data[ns].predicates["random/0.5"] = set_json_encoder(Predicate(json_content), max_level=-1)
 
+	json_content = {"type":"minecraft:entity_properties","entity":"this","predicate":{"flags":{"is_on_ground":True}}}
+	ctx.data[ns].predicates["is_on_ground"] = set_json_encoder(Predicate(json_content), max_level=-1)
+
 	json_content = {"replace":False,"values":["air","cave_air","void_air","structure_void","#wool_carpets","#saplings","#signs","#standing_signs","#wall_signs","moss_carpet","player_head","player_wall_head","short_grass","fern","dead_bush","tall_grass","large_fern","peony","rose_bush","lilac","sunflower","lily_pad","vine","red_mushroom","brown_mushroom","cobweb","water","kelp_plant","seagrass","ladder","tall_seagrass","snow","powder_snow","#leaves","moving_piston","oak_sapling","spruce_sapling","birch_sapling","jungle_sapling","acacia_sapling","dark_oak_sapling","mangrove_propagule","#flowers","mangrove_propagule","cobweb","torch","wall_torch","soul_torch","soul_wall_torch","redstone_torch","spore_blossom","brown_mushroom","red_mushroom","crimson_fungus","warped_fungus","crimson_roots","warped_roots","nether_sprouts","weeping_vines","twisting_vines","water","sugar_cane","kelp","hanging_roots","small_dripleaf","bamboo","end_rod","vine","#corals","dead_tube_coral","dead_brain_coral","dead_bubble_coral","dead_fire_coral","dead_horn_coral","dead_tube_coral_fan","dead_brain_coral_fan","dead_bubble_coral_fan","dead_fire_coral_fan","dead_horn_coral_fan","scaffolding","#flower_pots","#banners","lantern","soul_lantern","candle","small_amethyst_bud","medium_amethyst_bud","large_amethyst_bud","amethyst_cluster","redstone_wire","repeater","comparator","lever","tripwire_hook","#buttons","#pressure_plates","#rails","conduit"]}
 	ctx.data[ns].block_tags["non_solid"] = set_json_encoder(BlockTag(json_content))
 

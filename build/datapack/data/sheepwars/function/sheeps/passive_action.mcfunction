@@ -11,6 +11,7 @@
 ## Apply the sheep passive action
 # Abordage
 execute if entity @s[tag=sheepwars.abordage] on passengers run effect give @s slow_falling 2 0 true
+execute if entity @s[tag=sheepwars.abordage] on passengers if entity @s[type=player,tag=!sheepwars.abordage_rider] run function sheepwars:sheeps/abordage_mount
 
 # Tenebreux
 execute if entity @s[tag=sheepwars.tenebreux] run effect give @a[gamemode=!spectator,distance=..6] darkness 1 0 true

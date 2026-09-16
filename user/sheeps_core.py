@@ -74,6 +74,17 @@ execute store success score #success {ns}.data if score #success {ns}.data match
 function {ns}:sheeps/final/disappear
 """)
 
+	write_function(f"{ns}:sheeps/abordage_mount", f"""
+# Protect the rider from a fall it did not choose, until it lands again
+attribute @s safe_fall_distance modifier add {ns}:abordage 1024 add_value
+tag @s add {ns}.abordage_rider
+""")
+
+	write_function(f"{ns}:sheeps/abordage_landed", f"""
+attribute @s safe_fall_distance modifier remove {ns}:abordage
+tag @s remove {ns}.abordage_rider
+""")
+
 	write_function(f"{ns}:sheeps/give_levitation", f"""
 # Give levitation
 effect give @s levitation 1 8 true
@@ -93,6 +104,7 @@ tag @s add {ns}.launched_in_air
 ## Apply the sheep passive action
 # Abordage
 execute if entity @s[tag={ns}.abordage] on passengers run effect give @s slow_falling 2 0 true
+execute if entity @s[tag={ns}.abordage] on passengers if entity @s[type=player,tag=!{ns}.abordage_rider] run function {ns}:sheeps/abordage_mount
 
 # Tenebreux
 execute if entity @s[tag={ns}.tenebreux] run effect give @a[gamemode=!spectator,distance=..6] darkness 1 0 true

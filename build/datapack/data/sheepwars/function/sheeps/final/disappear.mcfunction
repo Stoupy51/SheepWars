@@ -10,8 +10,7 @@
 # @description		Remove the sheep from the game.
 #
 
-# Unride any rider, keeping it safe from the fall it did not choose
-execute on passengers run effect give @s[type=player] slow_falling 10 0 true
+# Unride any rider
 execute on passengers run ride @s[type=player] dismount
 
 # Remove the sheep

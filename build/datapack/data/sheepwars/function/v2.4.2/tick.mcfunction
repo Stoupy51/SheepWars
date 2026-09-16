@@ -13,6 +13,9 @@ execute as @e[type=husk,tag=sheepwars.chercheur_rider,predicate=!sheepwars:has_v
 # Remove levitation effect if no sheep is nearby and has been launched up
 execute as @a[tag=sheepwars.launched_in_air,nbt={active_effects:[{id:"minecraft:levitation"}]}] at @s unless entity @e[tag=sheepwars.sismique,distance=..6] run function sheepwars:sheeps/final/remove_levitation
 
+# Give the fall damage back to abordage riders once they are down and off the sheep
+execute as @a[tag=sheepwars.abordage_rider,predicate=!sheepwars:has_vehicle,predicate=sheepwars:is_on_ground] run function sheepwars:sheeps/abordage_landed
+
 # Sheep management
 execute as @e[type=sheep,tag=sheepwars.sheep] at @s run function sheepwars:sheeps/tick_sheep
 
