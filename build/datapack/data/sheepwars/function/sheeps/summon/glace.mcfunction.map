@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "glace.mcfunction",
+	"sourceRoot": "../../../../../../..",
+	"sources": [
+		"user/sheeps_summon.py"
+	],
+	"names": [],
+	"mappings": "AA8I6C;AAC7C;AACA;AACA;;;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA"
+}

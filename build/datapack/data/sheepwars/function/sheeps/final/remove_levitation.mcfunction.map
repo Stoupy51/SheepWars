@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "remove_levitation.mcfunction",
+	"sourceRoot": "../../../../../../..",
+	"sources": [
+		"user/link.py"
+	],
+	"names": [],
+	"mappings": "AAyEwD;;;;;;;;AACxD;AACA;AACA;AACA;AACA;AACA"
+}

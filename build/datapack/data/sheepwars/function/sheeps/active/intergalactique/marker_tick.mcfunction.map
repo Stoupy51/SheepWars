@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "marker_tick.mcfunction",
+	"sourceRoot": "../../../../../../../..",
+	"sources": [
+		"user/sheeps_active.py"
+	],
+	"names": [],
+	"mappings": "AA2HmE;AACnE;AACA;AACA;;;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AAEA"
+}

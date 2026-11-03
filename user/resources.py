@@ -11,9 +11,6 @@ def setup_resources(ctx: Context) -> None:
 
 	json_content: JsonDict
 
-	json_content = {"type":"minecraft:block","pools":[{"rolls":1,"bonus_rolls":0,"entries":[{"type":"minecraft:item","name":"minecraft:yellow_shulker_box","modifier":[{"type":"minecraft:copy_components","source":"block_entity","include":["minecraft:custom_name","minecraft:container","minecraft:lock","minecraft:container_loot"]}]}],"condition":{"type":"minecraft:all_of","terms":[{"type":"minecraft:inverted","term":{"type":"minecraft:match_tool","predicate":{"predicates":{"minecraft:custom_data":{"drop_contents":True}}}}}]}},{"rolls":1,"bonus_rolls":0,"entries":[{"type":"minecraft:dynamic","name":"minecraft:contents"}],"condition":{"type":"minecraft:match_tool","predicate":{"predicates":{"minecraft:custom_data":{"drop_contents":True}}}}}],"random_sequence":"minecraft:blocks/yellow_shulker_box","__smithed__":{"priority":{"stage":"early"},"rules":[{"type":"append","target":"pools[0].condition.terms","source":{"type":"reference","path":"pools[0].condition.terms[0]"}},{"type":"append","target":"pools","source":{"type":"reference","path":"pools[1]"}}]}}
-	ctx.data["minecraft"].loot_tables["blocks/yellow_shulker_box"] = set_json_encoder(LootTable(json_content), max_level=-1)
-
 	json_content = {"criteria":{"requirement":{"trigger":"minecraft:using_item","conditions":{"item":{"predicates":{"minecraft:custom_data":f"{{{ns}:{{}}}}"}}}}},"rewards":{"function":f"{ns}:right_click/all"}}
 	ctx.data[ns].advancements["using_item"] = set_json_encoder(Advancement(json_content), max_level=-1)
 

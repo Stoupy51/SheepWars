@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "fragmentation.mcfunction",
+	"sourceRoot": "../../../../../../..",
+	"sources": [
+		"user/sheeps_summon.py"
+	],
+	"names": [],
+	"mappings": "AAyHqD;AACrD;AACA;AACA;;;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA"
+}

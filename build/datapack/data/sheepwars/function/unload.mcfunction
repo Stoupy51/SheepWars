@@ -3,14 +3,13 @@
 #
 # @executed	unknown context
 #
-# @within	???
+# @within	(public)
 #
 # @description		Function that unload everything from the SheepWars datapack
 #
 
 # Delete all scoreboards
 scoreboard objectives remove sheepwars.data
-scoreboard objectives remove sheepwars.right_click
 scoreboard objectives remove sheepwars.previous_color
 scoreboard objectives remove sheepwars.launched_count
 

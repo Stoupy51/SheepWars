@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "abordage.mcfunction",
+	"sourceRoot": "../../../../../../..",
+	"sources": [
+		"user/sheeps_summon.py"
+	],
+	"names": [],
+	"mappings": "AAWgD;AAChD;AACA;AACA;;;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA"
+}

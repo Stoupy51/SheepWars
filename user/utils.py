@@ -138,7 +138,7 @@ tag @s remove {ns}.damaged
 	write_function(f"{ns}:utils/random_give", f"""
 # Loot insert
 setblock 0 0 0 air
-setblock 0 0 0 yellow_shulker_box
+setblock 0 0 0 barrel
 loot insert 0 0 0 loot {ns}:basic_drop
 execute if score #number_of_drops {ns}.data matches 2.. run loot insert 0 0 0 loot {ns}:basic_drop
 execute if score #number_of_drops {ns}.data matches 3.. run loot insert 0 0 0 loot {ns}:basic_drop
@@ -196,11 +196,19 @@ scoreboard players reset #c_glouton {ns}.data
 scoreboard players reset #c_tenebreux {ns}.data
 scoreboard players reset #c_explosif {ns}.data
 
-# Loot to the player and remove the shulker box
-loot give @s mine 0 0 0 stone[custom_data={{drop_contents:true}}]
+# Hand the stacks to the player and remove the container
+function {ns}:utils/give_items
 setblock 0 0 0 air
 
 # Reset input score
 scoreboard players reset #number_of_drops {ns}.data
+""")
+
+	write_function(f"{ns}:utils/give_items", f"""
+execute unless data storage {ns}:main Items[0] run return 0
+data remove storage {ns}:main Items[0].Slot
+execute summon item run data modify entity @s Item set from storage {ns}:main Items[0]
+data remove storage {ns}:main Items[0]
+function {ns}:utils/give_items
 """)
 

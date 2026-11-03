@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "abordage_mount.mcfunction",
+	"sourceRoot": "../../../../../..",
+	"sources": [
+		"user/sheeps_core.py"
+	],
+	"names": [],
+	"mappings": "AA4E+C;;;;;;;;AAC/C;AACA;AACA;AACA"
+}

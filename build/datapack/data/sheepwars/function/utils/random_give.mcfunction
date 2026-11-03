@@ -1,12 +1,12 @@
 
 #> sheepwars:utils/random_give
 #
-# @within	???
+# @within	(public)
 #
 
 # Loot insert
 setblock 0 0 0 air
-setblock 0 0 0 yellow_shulker_box
+setblock 0 0 0 barrel
 loot insert 0 0 0 loot sheepwars:basic_drop
 execute if score #number_of_drops sheepwars.data matches 2.. run loot insert 0 0 0 loot sheepwars:basic_drop
 execute if score #number_of_drops sheepwars.data matches 3.. run loot insert 0 0 0 loot sheepwars:basic_drop
@@ -64,8 +64,8 @@ scoreboard players reset #c_glouton sheepwars.data
 scoreboard players reset #c_tenebreux sheepwars.data
 scoreboard players reset #c_explosif sheepwars.data
 
-# Loot to the player and remove the shulker box
-loot give @s mine 0 0 0 stone[custom_data={drop_contents:true}]
+# Hand the stacks to the player and remove the container
+function sheepwars:utils/give_items
 setblock 0 0 0 air
 
 # Reset input score

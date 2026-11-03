@@ -19,7 +19,6 @@ def setup_core_functions(ctx: Context) -> None:
 
 # Delete all scoreboards
 scoreboard objectives remove {ns}.data
-scoreboard objectives remove {ns}.right_click
 scoreboard objectives remove {ns}.previous_color
 scoreboard objectives remove {ns}.launched_count
 

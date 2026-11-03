@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "intergalactique.mcfunction",
+	"sourceRoot": "../../../../../../..",
+	"sources": [
+		"user/sheeps_summon.py"
+	],
+	"names": [],
+	"mappings": "AA6MuD;AACvD;AACA;AACA;;;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA"
+}

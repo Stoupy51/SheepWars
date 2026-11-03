@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "particles.mcfunction",
+	"sourceRoot": "../../../../../..",
+	"sources": [
+		"user/magic_wool.py"
+	],
+	"names": [],
+	"mappings": ";;;;;;;;AAkCC;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA"
+}

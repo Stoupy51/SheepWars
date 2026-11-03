@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "incendiaire.mcfunction",
+	"sourceRoot": "../../../../../../..",
+	"sources": [
+		"user/sheeps_summon.py"
+	],
+	"names": [],
+	"mappings": "AAwLmD;AACnD;AACA;AACA;;;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA"
+}

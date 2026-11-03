@@ -19,9 +19,12 @@ output: "build"
 data_pack:
     name: "datapack"
 
+require:
+    - "stewbeet"
+    - "stewbeet.plugins.source_maps"
+
 # A list of strings or dicts representing "plugins".
 pipeline:
-    - "stewbeet.plugins.initialize"
     - "user.setup_database" # User code
     - "stewbeet.plugins.custom_recipes"
     - "stewbeet.plugins.datapack.loading"

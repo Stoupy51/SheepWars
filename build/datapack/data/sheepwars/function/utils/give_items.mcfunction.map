@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "give_items.mcfunction",
+	"sourceRoot": "../../../../../..",
+	"sources": [
+		"user/utils.py"
+	],
+	"names": [],
+	"mappings": "AA8M0C;;;;;;;AAC1C;AACA;AACA;AACA;AACA;AACA"
+}

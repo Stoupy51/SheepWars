@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "launch_entity_in_direction.mcfunction",
+	"sourceRoot": "../../../../../..",
+	"sources": [
+		"user/utils.py"
+	],
+	"names": [],
+	"mappings": "AA6D0D;AAC1D;AACA;AACA;;;;;;;;;;;;;;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA"
+}

@@ -3,7 +3,7 @@
 #
 # @executed	at the middle position of the requested area
 #
-# @within	???
+# @within	(public)
 #
 # @input score		#dx sheepwars.data : The x offset
 # @input score		#dy sheepwars.data : The y offset

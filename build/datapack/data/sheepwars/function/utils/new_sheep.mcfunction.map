@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "new_sheep.mcfunction",
+	"sourceRoot": "../../../../../..",
+	"sources": [
+		"user/utils.py"
+	],
+	"names": [],
+	"mappings": "AAqFyC;AACzC;AACA;AACA;;;;;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA"
+}

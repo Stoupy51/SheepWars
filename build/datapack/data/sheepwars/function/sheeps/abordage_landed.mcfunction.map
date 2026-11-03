@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "abordage_landed.mcfunction",
+	"sourceRoot": "../../../../../..",
+	"sources": [
+		"user/sheeps_core.py"
+	],
+	"names": [],
+	"mappings": "AAkFgD;;;;;;;;AAChD;AACA;AACA"
+}

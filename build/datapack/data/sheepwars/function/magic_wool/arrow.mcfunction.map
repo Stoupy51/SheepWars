@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "arrow.mcfunction",
+	"sourceRoot": "../../../../../..",
+	"sources": [
+		"user/magic_wool.py"
+	],
+	"names": [],
+	"mappings": "AAoC0C;AAC1C;AACA;AACA;;;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA"
+}

@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "blink.mcfunction",
+	"sourceRoot": "../../../../../..",
+	"sources": [
+		"user/sheeps_core.py"
+	],
+	"names": [],
+	"mappings": "AAWsC;AACtC;AACA;AACA;;;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA"
+}

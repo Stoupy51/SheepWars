@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "all.mcfunction",
+	"sourceRoot": "../../../../../..",
+	"sources": [
+		"user/core.py"
+	],
+	"names": [],
+	"mappings": "AAiCyC;;;;;;;;AACzC;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA"
+}

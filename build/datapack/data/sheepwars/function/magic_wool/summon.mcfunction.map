@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "summon.mcfunction",
+	"sourceRoot": "../../../../../..",
+	"sources": [
+		"user/magic_wool.py"
+	],
+	"names": [],
+	"mappings": "AAoD2C;AAC3C;AACA;AACA;;;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA"
+}
