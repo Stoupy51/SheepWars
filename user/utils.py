@@ -207,8 +207,14 @@ scoreboard players reset #number_of_drops {ns}.data
 	write_function(f"{ns}:utils/give_items", f"""
 execute unless data storage {ns}:main Items[0] run return 0
 data remove storage {ns}:main Items[0].Slot
-execute summon item run data modify entity @s Item set from storage {ns}:main Items[0]
+data modify storage {ns}:main drop.item set from storage {ns}:main Items[0]
+function {ns}:utils/give_item with storage {ns}:main drop
 data remove storage {ns}:main Items[0]
 function {ns}:utils/give_items
+""")
+
+	# The item entity is created with its data: an empty item entity is discarded before it can be modified
+	write_function(f"{ns}:utils/give_item", """
+$summon item ~ ~ ~ {Item:$(item)}
 """)
 
