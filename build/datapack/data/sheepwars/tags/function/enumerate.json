@@ -1,6 +1,6 @@
 {
 	"values": [
 		"#sheepwars:dependencies",
-		"sheepwars:v2.5.0/load/enumerate"
+		"sheepwars:v2.5.1/load/enumerate"
 	]
 }

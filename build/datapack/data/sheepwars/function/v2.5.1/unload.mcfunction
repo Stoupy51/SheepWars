@@ -1,18 +1,18 @@
 
-#> sheepwars:v2.5.0/unload
+#> sheepwars:v2.5.1/unload
 #
 # @within	#sheepwars:unload
-#			sheepwars:v2.5.0/unload_with_libraries
+#			sheepwars:v2.5.1/unload_with_libraries
 #
 
 # Clear custom items
 clear @a *[custom_data~{"sheepwars":{}}]
 
 # Kill entities with custom tags
-execute as @e[tag=sheepwars.explode] at @s run function sheepwars:v2.5.0/unload/safe_kill
-execute as @e[tag=sheepwars.fragmentation_part] at @s run function sheepwars:v2.5.0/unload/safe_kill
-execute as @e[tag=sheepwars.new] at @s run function sheepwars:v2.5.0/unload/safe_kill
-execute as @e[tag=sheepwars.sheep] at @s run function sheepwars:v2.5.0/unload/safe_kill
+execute as @e[tag=sheepwars.explode] at @s run function sheepwars:v2.5.1/unload/safe_kill
+execute as @e[tag=sheepwars.fragmentation_part] at @s run function sheepwars:v2.5.1/unload/safe_kill
+execute as @e[tag=sheepwars.new] at @s run function sheepwars:v2.5.1/unload/safe_kill
+execute as @e[tag=sheepwars.sheep] at @s run function sheepwars:v2.5.1/unload/safe_kill
 
 # Remove scoreboard objectives
 scoreboard objectives remove load.status
@@ -28,4 +28,5 @@ data remove storage sheepwars:main Items
 data remove storage sheepwars:main Motion
 data remove storage sheepwars:main Rotation
 data remove storage sheepwars:main UUID
+data remove storage sheepwars:main drop
 
